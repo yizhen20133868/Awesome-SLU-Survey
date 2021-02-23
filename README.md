@@ -4,6 +4,13 @@
 
 This repo contains a list of papers, codes, datasets, leaderboards in SLU field. If you found any error, please don't hesitate to open an issue.
 
+## Contributor
+
+Contributed by [Libo Qin](https://github.com/yizhen20133868), [Tianbao Xie](https://github.com/Timothyxxx), [Yudi Zhang](https://github.com/zyd-project),  [Lehan Wang](https://github.com/luxuriant0116)
+
+
+Thanks for supports from my adviser [Wanxiang Che](http://ir.hit.edu.cn/~car/english.htm)!
+
 ## Introduction
 
 Spoken language understanding (SLU) is a critical component in task-oriented dialogue systems. It usually consists of intent and slot filling task to extract semantic constiuents from the natrual language utterances.
@@ -11,11 +18,11 @@ Spoken language understanding (SLU) is a critical component in task-oriented dia
 For the purpose of alleviating our pressure in article/dataset collation, we worked on sorting out the relevant data sets, papers, codes and lists of SLU in this project.
 
 At present, the project has been completely open source, including:
-1. **Articles and infos in different directions in the field of SLU:** we classify and arrange the papers according to the current mainstream directions, which you can also give a quick check from the `Content` section below. Each line of the list contains not only the title of the paper, but also the year of publication, the source of publication, the paper link and code link for quick indexing, as well as the data set used.
-
+1. **Articles and infos in different directions in the field of SLU:** we classify and arrange the papers according to the current mainstream directions. Each line of the list contains not only the title of the paper, but also the year of publication, the source of publication, the paper link and code link for quick indexing, as well as the data set used.
 2. **SLU domain dataset sorting table:** you can quickly index the data set you want to use in it to help you quickly understand the general scale, basic structure, content, characteristics, source and acquisition method of this dataset.
-
 3. **Leaderboard list on the mainstream datasets of SLU:** we sorted out the leaderboard on the mainstream datasets, and distinguished them according to pre-trained or not. In addition to the paper name and related scores, each line also has links to year, paper and code.
+
+The taxonomy of our survey can be summarized into this picture below.
 
 ![SLUs-taxonomy](./SLUs-taxonomy.png)
 
