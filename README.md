@@ -17,7 +17,7 @@ At present, the project has been completely open source, including:
 
 3. **Leaderboard list on the mainstream datasets of SLU:** we sorted out the leaderboard on the mainstream datasets, and distinguished them according to pre-trained or not. In addition to the paper name and related scores, each line also has links to year, paper and code.
 
-![SLUs-taxonomy.pdf](./SLUs-taxonomy.pdf)
+![SLUs-taxonomy](./SLUs-taxonomy.png)
 
 
 ## Resources
