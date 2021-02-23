@@ -17,12 +17,7 @@ At present, the project has been completely open source, including:
 
 3. **Leaderboard list on the mainstream datasets of SLU:** we sorted out the leaderboard on the mainstream datasets, and distinguished them according to pre-trained or not. In addition to the paper name and related scores, each line also has links to year, paper and code.
 
-
-<object data="https://github.com/yizhen20133868/Awesome-SLU-Survey/SLUs-taxonomy.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/yizhen20133868/Awesome-SLU-Survey/SLUs-taxonomy.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/yizhen20133868/Awesome-SLU-Survey/SLUs-taxonomy.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+![SLUs-taxonomy.pdf](./SLUs-taxonomy.pdf)
 
 
 ## Resources
