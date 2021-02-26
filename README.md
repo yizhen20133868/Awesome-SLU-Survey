@@ -18,14 +18,42 @@ Spoken language understanding (SLU) is a critical component in task-oriented dia
 For the purpose of alleviating our pressure in article/dataset collation, we worked on sorting out the relevant data sets, papers, codes and lists of SLU in this project.
 
 At present, the project has been completely open source, including:
-1. **Articles and infos in different directions in the field of SLU:** we classify and arrange the papers according to the current mainstream directions. Each line of the list contains not only the title of the paper, but also the year of publication, the source of publication, the paper link and code link for quick indexing, as well as the data set used.
-2. **SLU domain dataset sorting table:** you can quickly index the data set you want to use in it to help you quickly understand the general scale, basic structure, content, characteristics, source and acquisition method of this dataset.
+1. **SLU domain dataset sorting table:** you can quickly index the data set you want to use in it to help you quickly understand the general scale, basic structure, content, characteristics, source and acquisition method of this dataset.
+2. **Articles and infos in different directions in the field of SLU:** we classify and arrange the papers according to the current mainstream directions. Each line of the list contains not only the title of the paper, but also the year of publication, the source of publication, the paper link and code link for quick indexing, as well as the data set used.
 3. **Leaderboard list on the mainstream datasets of SLU:** we sorted out the leaderboard on the mainstream datasets, and distinguished them according to pre-trained or not. In addition to the paper name and related scores, each line also has links to year, paper and code.
 
 The taxonomy of our survey can be summarized into this picture below.
 
 ![SLUs-taxonomy](./SLUs-taxonomy.png)
 
+## Quick path
+
+- [Resources](#resources)
+  * [survey paper links](#survey-paper-links)
+  * [recent open-sourced code](#recent-open-sourced-code)
+  * [Single Model](#single-model)
+  * [Joint Model](#joint-model)
+  * [Complex SLU Model](#complex-slu-model)
+- [Dataset](#dataset)
+- [Direction](#direction)
+  * [Single Slot Filling](#single-slot-filling)
+  * [Single Intent Detection](#single-intent-detection)
+  * [Joint Model](#joint-model-1)
+  * [Contextual SLU](#contextual-slu)
+  * [Chinese SLU](#chinese-slu)
+  * [Cross-domain SLU](#cross-domain-slu)
+  * [Cross-lingual SLU](#cross-lingual-slu)
+  * [Low-resource SLU](#low-resource-slu)
+    + [Few-shot SLU](#few-shot-slu)
+    + [Zero-shot SLU](#zero-shot-slu)
+    + [Unsupervised SLU](#unsupervised-slu)
+- [LeaderBoard](#leaderboard)
+  * [ATIS](#atis)
+    + [Non-pretrained model](#non-pretrained-model)
+    + [+ Pretrained model](#--pretrained-model)
+  * [SNIPS](#snips)
+    + [Non-pretrained model](#non-pretrained-model-1)
+    + [+ Pretrained model](#--pretrained-model-1)
 
 ## Resources
 
@@ -66,7 +94,7 @@ The taxonomy of our survey can be summarized into this picture below.
 10. **MTOP: A Comprehensive Multilingual Task-Oriented Semantic Parsing Benchmark** (MTOP/Multilingual ATIS) `arXiv 2020` [[pdf]](https://arxiv.org/pdf/2008.09335.pdf) [[code]]() 
 11. **Neural Architectures for  Multilingual Semantic Parsing** (GEO/ATIS) `ACL 2017` [[pdf]](https://www.aclweb.org/anthology/P17-2007.pdf) [[code]](http://statnlp.org/research/sp/) 
 12. **Few-shot Learning for Multi-label Intent Detection** `AAAI 2021` [[pdf]](https://arxiv.org/abs/2010.05256) [[code]](https://github.com/AtmaHou/FewShotMultiLabel) 
-13. **Few-shot Slot Tagging with Collapsed Dependency Transfer and Label-enhanced Task-adaptive Projection Network** `ACL 2020` [[pdf]](https://www.aclweb.org/anthology/2020.acl-main.128.pdf) [[code]](https://github.com/ AtmaHou/FewShotTagging)
+13. **Few-shot Slot Tagging with Collapsed Dependency Transfer and Label-enhanced Task-adaptive Projection Network** `ACL 2020` [[pdf]](https://www.aclweb.org/anthology/2020.acl-main.128.pdf) [[code]](https://github.com/AtmaHou/FewShotTagging)
 
 
 
