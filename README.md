@@ -35,7 +35,7 @@ The taxonomy of our survey can be summarized into this picture below.
   * [Joint Model](#joint-model)
   * [Complex SLU Model](#complex-slu-model)
 - [Dataset](#dataset)
-- [Direction](#direction)
+- [Frontiers](#frontiers)
   * [Single Slot Filling](#single-slot-filling)
   * [Single Intent Detection](#single-intent-detection)
   * [Joint Model](#joint-model-1)
@@ -120,7 +120,7 @@ The taxonomy of our survey can be summarized into this picture below.
 | Schema-Guided Dialogue Dataset(SGD) | dialogue simulation(auto based on identified scenarios), word-replacement and human intergration as paraphrasing| Download:  https://github.com/google-researchdatasets/dstc8-schema-guided-dialogue Paper: https://arxiv.org/pdf/1909.05855.pdf | M                       | domains:16,dialogues:16142,turns:329964,acg turns per dialogue:20.44,total unique tokens:30352,slots:214,slot values:14319| NA |   Scheme Representation: service_name;description;slot's name,description,is_categorial,possible_values;intent's name,description,is_transactional,required_slots,optional_slots,result_slots. Dialogue Representation: dialogue_id,services,turns,speaker,utterance,frame,service,slot's name,start,exclusive_end;action's act,slot,values,canonical_values;service_call's method,parameters;service_results,state's active_intent,requested_slots,slot_values |
 
 
-## Direction
+## Frontiers
 
 ### Single Slot Filling
 
