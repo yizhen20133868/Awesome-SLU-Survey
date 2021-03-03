@@ -47,6 +47,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
     + [Implicit joint modeling](#implicit-joint-modeling)
     + [Explicit joint modeling](#explicit-joint-modeling)
   * [Contextual SLU](#contextual-slu)
+  * [Multi-intent SLU](#multi-intent-slu)
   * [Chinese SLU](#chinese-slu)
   * [Cross-domain SLU](#cross-domain-slu)
   * [Cross-lingual SLU](#cross-lingual-slu)
@@ -61,6 +62,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
   * [SNIPS](#snips)
     + [Non-pretrained model](#non-pretrained-model-1)
     + [+ Pretrained model](#--pretrained-model-1)
+
 
 ## Resources
 
