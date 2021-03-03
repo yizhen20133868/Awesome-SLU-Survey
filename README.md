@@ -6,10 +6,10 @@ This repo contains a list of papers, codes, datasets, leaderboards in SLU field.
 
 ## Contributor
 
-Contributed by [Libo Qin](https://github.com/yizhen20133868), [Tianbao Xie](https://github.com/Timothyxxx), [Yudi Zhang](https://github.com/zyd-project),  [Lehan Wang](https://github.com/luxuriant0116), [Wanxiang Che](http://ir.hit.edu.cn/~car/english.htm).
+Contributed by [Libo Qin](http://ir.hit.edu.cn/~lbqin/), [Tianbao Xie](https://github.com/Timothyxxx), [Yudi Zhang](https://github.com/zyd-project),  [Lehan Wang](https://github.com/luxuriant0116), [Wanxiang Che](http://ir.hit.edu.cn/~car/).
 
 
-Thanks for supports from our adviser [Wanxiang Che](http://ir.hit.edu.cn/~car/english.htm)!
+Thanks for supports from our adviser [Wanxiang Che](http://ir.hit.edu.cn/~car/)!
 
 ## Introduction
 
