@@ -13,9 +13,9 @@ Thanks for supports from our adviser [Wanxiang Che](http://ir.hit.edu.cn/~car/)!
 
 ## Introduction
 
-Spoken language understanding (SLU) is a critical component in task-oriented dialogue systems. It usually consists of intent and slot filling task to extract semantic constiuents from the natrual language utterances.
+Spoken language understanding (SLU) is a critical component in task-oriented dialogue systems. It usually consists of intent and slot filling task to extract semantic constituents from the natrual language utterances.
 
-For the purpose of alleviating our pressure in article/dataset collation, we worked on sorting out the relevant data sets, papers, codes and lists of SLU in this project.
+For the purpose of alleviating pressure in article/dataset collation, we worked on sorting out the relevant data sets, papers, codes and lists of SLU in this project.
 
 At present, the project has been completely open source, including:
 1. **SLU domain dataset sorting table:** you can quickly index the data set you want to use in it to help you quickly understand the general scale, basic structure, content, characteristics, source and acquisition method of this dataset.
