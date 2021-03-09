@@ -3,6 +3,17 @@
 ![](https://img.shields.io/badge/Status-building-brightgreen) ![](https://img.shields.io/badge/PRs-Welcome-red) 
 
 This repo contains a list of papers, codes, datasets, leaderboards in SLU field. If you found any error, please don't hesitate to open an issue or pull request.
+If you find this repository helpful for your work,  please kindly cite the following paper. The bibtex are listed below:
+<pre>
+@misc{qin2021survey,
+      title={A Survey on Spoken Language Understanding: Recent Advances and New Frontiers}, 
+      author={Libo Qin and Tianbao Xie and Wanxiang Che and Ting Liu},
+      year={2021},
+      eprint={2103.03095},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+</pre>
 
 ## Contributor
 
@@ -31,6 +42,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 
 
 ![SLUs-taxonomy](./pic/SLUs-taxonomy.png)
+
 
 ## Quick path
 - [Resources](#resources)
@@ -66,9 +78,10 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 ## Resources
 ### survey paper links
 
-1. **Spoken language understanding: Systems for extracting semantic information from speech** `book` [[pdf]](https://ieeexplore.ieee.org/book/8042134)
-2. **Recent Neural Methods on Slot Filling and Intent Classification**  `COLING 2020` [[pdf]](https://www.aclweb.org/anthology/2020.coling-main.42.pdf) 
-3. **A survey of joint intent detection and slot-filling models in natural**  `arxiv 2021` [[pdf]](https://arxiv.org/pdf/2101.08091.pdf) 
+1. **A Survey on Spoken Language Understanding: Recent Advances and New Frontiers** `arxiv` [[pdf]](https://arxiv.org/pdf/2103.03095.pdf)
+2. **Spoken language understanding: Systems for extracting semantic information from speech** `book` [[pdf]](https://ieeexplore.ieee.org/book/8042134)
+3. **Recent Neural Methods on Slot Filling and Intent Classification**  `COLING 2020` [[pdf]](https://www.aclweb.org/anthology/2020.coling-main.42.pdf) 
+4. **A survey of joint intent detection and slot-filling models in natural**  `arxiv 2021` [[pdf]](https://arxiv.org/pdf/2101.08091.pdf) 
 
 ### recent open-sourced code
 
