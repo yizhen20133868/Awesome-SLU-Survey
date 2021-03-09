@@ -2,8 +2,9 @@
 
 ![](https://img.shields.io/badge/Status-building-brightgreen) ![](https://img.shields.io/badge/PRs-Welcome-red) 
 
-This repo contains a list of papers, codes, datasets, leaderboards in SLU field. If you found any error, please don't hesitate to open an issue or pull request.
-If you find this repository helpful for your work,  please kindly cite the following paper. The bibtex are listed below:
+This repository contains a list of papers, codes, datasets, leaderboards in SLU field. If you found any error, please don't hesitate to open an issue or pull request.
+
+If you find this repository helpful for your work,  please kindly cite the following paper. The Bibtex are listed below:
 <pre>
 @misc{qin2021survey,
       title={A Survey on Spoken Language Understanding: Recent Advances and New Frontiers}, 
@@ -29,9 +30,9 @@ Spoken language understanding (SLU) is a critical component in task-oriented dia
 For the purpose of alleviating pressure in article/dataset collation, we worked on sorting out the relevant data sets, papers, codes and lists of SLU in this project.
 
 At present, the project has been completely open source, including:
-1. **SLU domain dataset sorting table:** you can quickly index the data set you want to use in it to help you quickly understand the general scale, basic structure, content, characteristics, source and acquisition method of this dataset.
-2. **Articles and infos in different directions in the field of SLU:** we classify and arrange the papers according to the current mainstream directions. Each line of the list contains not only the title of the paper, but also the year of publication, the source of publication, the paper link and code link for quick indexing, as well as the data set used.
-3. **Leaderboard list on the mainstream datasets of SLU:** we sorted out the leaderboard on the mainstream datasets, and distinguished them according to pre-trained or not. In addition to the paper name and related scores, each line also has links to year, paper and code.
+1. **SLU domain dataset sorting table:** we sorted out the dataset used in SLU field. You can index in it and get the message of general scale, basic structure, content, characteristics, source and acquisition method of the dataset you want to know.
+2. **Articles and infos in different directions in the field of SLU:** we classified and arranged the papers according to the current mainstream frontiers. Each line of the list contains not only the title of the paper, but also the year of publication, the source of publication, the paper link and code link for quick indexing, as well as the dataset used.
+3. **Leaderboard list on the mainstream datasets of SLU:** we sorted out the leaderboard on the mainstream datasets, and distinguished them according to pre-trained or not. In addition to the paper/model/method name and related scores, each line also has links to year, paper and code if it has.
 
 The taxonomy and frontiers of our survey can be summarized into this picture below.
 
