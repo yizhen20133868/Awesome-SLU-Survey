@@ -82,7 +82,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 1. **A Survey on Spoken Language Understanding: Recent Advances and New Frontiers** `arxiv` [[pdf]](https://arxiv.org/pdf/2103.03095.pdf)
 2. **Spoken language understanding: Systems for extracting semantic information from speech** `book` [[pdf]](https://ieeexplore.ieee.org/book/8042134)
 3. **Recent Neural Methods on Slot Filling and Intent Classification**  `COLING 2020` [[pdf]](https://www.aclweb.org/anthology/2020.coling-main.42.pdf) 
-4. **A survey of joint intent detection and slot-filling models in natural**  `arxiv 2021` [[pdf]](https://arxiv.org/pdf/2101.08091.pdf) 
+4. **A survey of joint intent detection and slot-filling models in natural language understanding**  `arxiv 2021` [[pdf]](https://arxiv.org/pdf/2101.08091.pdf) 
 
 ### recent open-sourced code
 
