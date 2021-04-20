@@ -120,25 +120,181 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 
 
 ## Dataset
-
-| Name                               | Intro                                                        | Links                                                        | Multi/Single  Turn(M/S) | Detail                                                       | Size & Stats                                                 | Label                                                        |
-| ---------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ATIS                               | 1. The ATIS (Airline Travel Information Systems) dataset (Tur  et al., 2010) is widely used in SLU research 2. For natural language  understanding | Download:         1.https://github.com/yizhen20133868/StackPropagation-SLU/tree/master/data/atis         2.https://github.com/yvchen/JointSLU/tree/master/data      Paper:      https://www.aclweb.org/anthology/H90-1021.pdf | S                       | Airline Travel Information     However, this data set has been shown to have a serious skew problem on intent | Train: 4478 Test: 893 120 slot and 21 intent                 | Intent Slots                                                 |
-| SNIPS                              | 1. Collected by Snips for model evaluation. 2. For natural   language understanding 3. Homepage:   https://medium.com/snips-ai/benchmarking-natural-language-understanding-systems-google-facebook-microsoft-and-snips-2b8ddcf9fb19 | Download:       https://github.com/snipsco/nlu-benchmark/tree/master/2017-06-custom-intent-engines      Paper:      https://arxiv.org/pdf/1805.10190.pdf | S                       | 7 task: Weather,play music, search, add to list, book, moive | Train:13,084 Test:700 7 intent 72 slot labels                | Intent Slots                                                 |
-| Facebook Multilingual SLU  Dataset | 1 Contains English, Spanish, and Thai across the weather,  reminder, and alarm domains      2 For cross-lingual SLU | Download:      https://fb.me/multilingual_task_oriented_data      Paper:      https://www.aclweb.org/anthology/N19-1380.pdf | S                       | Utterances are manually translated and annotated             | Train: English 30,521; Spanish 3,617; Thai 2,156     Dev: English 4,181; Spanish 1,983; Thai 1,235     Test: English 8,621; Spanish 3,043; Thai 1,692     11 slot and 12 intent | Intent Slots                                                 |
-| MIT Restraunt Corpus               | MIT corpus contains train set and test set in BIO format for  NLU | Download:      https://groups.csail.mit.edu/sls/downloads/restaurant/ | S                       | It is a single-domain dataset, which is associated with  restaurant reservations. MR contains ‘open-vocabulary’ slots, such as  restaurant names | Train:7760      Test:1521                                    | Slots                                                        |
-| MIT Movie Corpus                   | The MIT Movie Corpus is a semantically tagged training and  test corpus in BIO format.      The eng corpus are simple queries, and the trivia10k13 corpus are more  complex queries. | Download:      https://groups.csail.mit.edu/sls/downloads/movie/ | S                       | The MIT movie corpus consists of two single-domain datasets:  the movie eng (ME) and movie trivia (MT) datasets. While both datasets  contain queries about film information, the trivia queries are more complex  and specific | eng Corpus:     Train:9775     Test:2443     Trivia Corpus:     Train:7816     Test:1953 | Slots                                                        |
-| Multilingual ATIS                  | ATIS was manually translated into Hindi and Turkish          | Download:      It has been put into LDC, and you can download it if you are own a   membership or pay for it      Paper:      http://shyamupa.com/papers/UFTHH18.pdf | S                       | 3 languages                                                  | On the top of ATIS dataset, 893 and 715 utterances from the  ATIS test split were translated     and annotated for Hindi and Turkish evaluation respectively     also translated and annotated 600(each language     separately) utterances from the ATIS train split to use as  supervision     In total 37,084 training examples  and 7,859 test examples | Intent Slots                                                 |
-| Multilingual ATIS++                | Extends Multilingual ATIS corpus to     nine languages across four language families | Download:      contact multiatis@amazon.com.      Paper:      https://arxiv.org/abs/2004.14353 | S                       | 10 languages                                                 | check the paper to find the full table of description     (to many info ,have no enough space here) | Intent Slots                                                 |
-| Almawave-SLU                       | 1. A dataset for Italian SLU     2. Was generated through a semi-automatic procedure from SNIPS | Download:      contact [first name initial\].[last name]@almawave.it for the dataset      (any author in this paper)      Paper:      https://arxiv.org/pdf/1907.07526.pdf | S                       | 6 domains: Music, Restaurants, TV, Movies,     Books, Weather | Train: 7,142     Validation: 700     Test: 700     7 intents and 39 slots | Intent Slots                                                 |
-| Chatbot Corpus                     | 1. Chatbot Corpus is based on questions gathered by a Telegram  chatbot which answers questions about public transport connections,  consisting of 206 questions     2. For intent classification test | Download:      https://github.com/sebischair/NLU-Evaluation-Corpora      Paper:      https://www.aclweb.org/anthology/W17-5522.pdf | S                       | 2 Intents: Departure Time, Find Connection     5 entity types: StationStart, StationDest, Criterion, Vehicle, Line | Train: 100     Test: 106                                     | Intent Entity                                                |
-| StackExchange Corpus               | 1. StackExchange Corpus is based on data from two  StackExchange platforms: ask ubuntu and Web Applications     2. Gathers 290 questions and answers in total, 100 from Web Applications  and 190 from ask ubuntu     3. For intent classification test | Download:         https://github.com/sebischair/NLU-Evaluation-Corpora       Paper:      https://www.aclweb.org/anthology/W17-5522.pdf | S                       | Ask ubuntu Intents: “Make Update”, “Setup Printer”, “Shutdown  Computer”, and “Software Recommendation”     Web Applications Intents: “Change  Password”, “Delete Account”, “Download Video”, “Export Data”, “Filter Spam”,  “Find Alternative”, and “Sync Accounts” | Total: 290     Ask ubuntu: 190     Web Application: 100      | Intent Entity                                                |
-| MixSNIPS/MixATIS                   | multi-intent dataset based on SNIPS and ATIS                 | Download:      https://github.com/LooperXX/AGIF/tree/master/data      Paper:      https://www.aclweb.org/anthology/2020.findings-emnlp.163.pdf | S                       | using conjunctions, connecting sentences with different  intents forming a ratio of 0.3,0.5 and 0.2 for sentences has which 1,2 and 3  intents, respectively | Train:12,759 utterances     Dev:4,812 utterances     Test:7,848 utterances | Intent(Multi),Slots                                          |
-| TOP semantic parsing               | 1,Hierarchical annotation scheme for semantic parsing     2,Allows the representation of compositional queries     3,Can be efficiently and accurately parsed by standard constituency parsing  models | Download:      http://fb.me/semanticparsingdialog      Paper:      https://www.aclweb.org/anthology/D18-1300.pdf | S                       | focused on navigation, events, and navigation to events     evaluation script can be run from evaluate.py within the dataset | 44783 annotations     Train:31279     Dev:4462     Test:9042 | Inten ,Slots in Tree  format                                 |
-| MTOP: Multilingual TOP             | 1.An almost-parallel multilingual task-oriented semantic  parsing dataset covering 6 languages and 11 domains.     2.the first multilingual dataset that contain compositional representations  that allow complex nested queries.     3.the dataset creation: i) generating synthetic utterances and annotating  in English, ii) translation, label transfer, post-processing, post editing  and filtering for other languages | Download:      https://fb.me/mtop_dataset      Paper:      https://arxiv.org/pdf/2008.09335.pdf | S                       | 6 languages (both high  and low resource): English, Spanish, French, German, Hindi and Thai.       a mix of both simple as well as  compositional nested queries across 11 domains, 117 intents and 78 slots. | 100k examples in total for 6 languages.     Roughly divided into 70:10:20 percent splits for train,eval and test. | Two kinds of  representations:     1.flat representatiom: Intent and slots     2.compositional decoupled representations:nested intents inside slots     More details 3.2 section in the paper |
-| CAIS                               | Collected from real world speaker systems  with manual annotations of slot tags and intent labels | [https://github.com/Adaxry/CM-Net](https://github.com/Adaxry/CM-Net/tree/master/CAIS) | S                       | 1.The utterances were collected from the Chinese Artificial Intelligence Speakers 2.Adopt the BIOES tagging scheme for slots instead of the BIO2 used in the ATIS 3.intent labels are partial to the PlayMusic option | Train: 7,995 utterances Dev: 994 utterances Test: 1024 utterances | slots tags and intent labels                                 |
-| Simulated Dialogues dataset        | machines2machines (M2M)                                      | Download: https://github.com/google-research-datasets/simulated-dialogue Paper: http://www.colips.org/workshop/dstc4/papers/60.pdf | M                       | Slots: Sim-R (Restaurant)        price_range, location, restaurant_name, category, num_people, date, time Sim-M (Movie)        theatre_name, movie, date, time, num_people Sim-GEN (Movie):theatre_name, movie, date, time, num_people | Train: Sim-R:1116 Sim-M:384 Sim-GEN:100k Dev: Sim-R:349 Sim-M:120 Sim-GEN:10k Test: Sim-R:775 Sim-M:264 Sim-GEN:10k | Dialogue state User's act,slot,intent System's act,slot      |
-| Schema-Guided Dialogue Dataset(SGD) | dialogue simulation(auto based on identified scenarios), word-replacement and human intergration as paraphrasing| Download:  https://github.com/google-researchdatasets/dstc8-schema-guided-dialogue Paper: https://arxiv.org/pdf/1909.05855.pdf | M                       | domains:16,dialogues:16142,turns:329964,acg turns per dialogue:20.44,total unique tokens:30352,slots:214,slot values:14319| NA |   Scheme Representation: service_name;description;slot's name,description,is_categorial,possible_values;intent's name,description,is_transactional,required_slots,optional_slots,result_slots. Dialogue Representation: dialogue_id,services,turns,speaker,utterance,frame,service,slot's name,start,exclusive_end;action's act,slot,values,canonical_values;service_call's method,parameters;service_results,state's active_intent,requested_slots,slot_values |
+<div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
+<table style="width:100%" border="2">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Intro</th>
+    <th>Links</th>
+    <th>Multi/Single Turn(M/S)</th>
+    <th>Detail</th>
+    <th>Size & Stats</th>
+    <th>Label</th>
+  </tr>
+</thead>
+<tbody >
+<tr>
+	<td><code> ATIS                               </td></code>
+		<td> 1. The ATIS (Airline Travel Information Systems) dataset (Tur  et al., 2010) is widely used in SLU research 2. For natural language  understanding </td>
+		<td> Download:         1.https://github.com/yizhen20133868/StackPropagation-SLU/tree/master/data/atis         2.https://github.com/yvchen/JointSLU/tree/master/data      Paper:      https://www.aclweb.org/anthology/H90-1021.pdf </td>
+		<td> S                       </td>
+		<td> Airline Travel Information     However, this data set has been shown to have a serious skew problem on intent </td>
+		<td> Train: 4478 Test: 893 120 slot and 21 intent                 </td>
+		<td> Intent Slots                                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> SNIPS                              </td></code>
+		<td> 1. Collected by Snips for model evaluation. 2. For natural   language understanding 3. Homepage:   https://medium.com/snips-ai/benchmarking-natural-language-understanding-systems-google-facebook-microsoft-and-snips-2b8ddcf9fb19 </td>
+		<td> Download:       https://github.com/snipsco/nlu-benchmark/tree/master/2017-06-custom-intent-engines      Paper:      https://arxiv.org/pdf/1805.10190.pdf </td>
+		<td> S                       </td>
+		<td> 7 task: Weather,play music, search, add to list, book, moive </td>
+		<td> Train:13,084 Test:700 7 intent 72 slot labels                </td>
+		<td> Intent Slots                                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Facebook Multilingual SLU  Dataset </td></code>
+		<td> 1 Contains English, Spanish, and Thai across the weather,  reminder, and alarm domains      2 For cross-lingual SLU </td>
+		<td> Download:      https://fb.me/multilingual_task_oriented_data      Paper:      https://www.aclweb.org/anthology/N19-1380.pdf </td>
+		<td> S                       </td>
+		<td> Utterances are manually translated and annotated             </td>
+		<td> Train: English 30,521; Spanish 3,617; Thai 2,156     Dev: English 4,181; Spanish 1,983; Thai 1,235     Test: English 8,621; Spanish 3,043; Thai 1,692     11 slot and 12 intent </td>
+		<td> Intent Slots                                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> MIT Restraunt Corpus               </td></code>
+		<td> MIT corpus contains train set and test set in BIO format for  NLU </td>
+		<td> Download:      https://groups.csail.mit.edu/sls/downloads/restaurant/ </td>
+		<td> S                       </td>
+		<td> It is a single-domain dataset, which is associated with  restaurant reservations. MR contains ‘open-vocabulary’ slots, such as  restaurant names </td>
+		<td> Train:7760      Test:1521                                    </td>
+		<td> Slots                                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> MIT Movie Corpus                   </td></code>
+		<td> The MIT Movie Corpus is a semantically tagged training and  test corpus in BIO format.      The eng corpus are simple queries, and the trivia10k13 corpus are more  complex queries. </td>
+		<td> Download:      https://groups.csail.mit.edu/sls/downloads/movie/ </td>
+		<td> S                       </td>
+		<td> The MIT movie corpus consists of two single-domain datasets:  the movie eng (ME) and movie trivia (MT) datasets. While both datasets  contain queries about film information, the trivia queries are more complex  and specific </td>
+		<td> eng Corpus:     Train:9775     Test:2443     Trivia Corpus:     Train:7816     Test:1953 </td>
+		<td> Slots                                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Multilingual ATIS                  </td></code>
+		<td> ATIS was manually translated into Hindi and Turkish          </td>
+		<td> Download:      It has been put into LDC, and you can download it if you are own a   membership or pay for it      Paper:      http://shyamupa.com/papers/UFTHH18.pdf </td>
+		<td> S                       </td>
+		<td> 3 languages                                                  </td>
+		<td> On the top of ATIS dataset, 893 and 715 utterances from the  ATIS test split were translated     and annotated for Hindi and Turkish evaluation respectively     also translated and annotated 600(each language     separately) utterances from the ATIS train split to use as  supervision     In total 37,084 training examples  and 7,859 test examples </td>
+		<td> Intent Slots                                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Multilingual ATIS++                </td></code>
+		<td> Extends Multilingual ATIS corpus to     nine languages across four language families </td>
+		<td> Download:      contact multiatis@amazon.com.      Paper:      https://arxiv.org/abs/2004.14353 </td>
+		<td> S                       </td>
+		<td> 10 languages                                                 </td>
+		<td> check the paper to find the full table of description     (to many info ,have no enough space here) </td>
+		<td> Intent Slots                                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Almawave-SLU                       </td></code>
+		<td> 1. A dataset for Italian SLU     2. Was generated through a semi-automatic procedure from SNIPS </td>
+		<td> Download:      contact [first name initial\].[last name]@almawave.it for the dataset      (any author in this paper)      Paper:      https://arxiv.org/pdf/1907.07526.pdf </td>
+		<td> S                       </td>
+		<td> 6 domains: Music, Restaurants, TV, Movies,     Books, Weather </td>
+		<td> Train: 7,142     Validation: 700     Test: 700     7 intents and 39 slots </td>
+		<td> Intent Slots                                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Chatbot Corpus                     </td></code>
+		<td> 1. Chatbot Corpus is based on questions gathered by a Telegram  chatbot which answers questions about public transport connections,  consisting of 206 questions     2. For intent classification test </td>
+		<td> Download:      https://github.com/sebischair/NLU-Evaluation-Corpora      Paper:      https://www.aclweb.org/anthology/W17-5522.pdf </td>
+		<td> S                       </td>
+		<td> 2 Intents: Departure Time, Find Connection     5 entity types: StationStart, StationDest, Criterion, Vehicle, Line </td>
+		<td> Train: 100     Test: 106                                     </td>
+		<td> Intent Entity                                                </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> StackExchange Corpus               </td></code>
+		<td> 1. StackExchange Corpus is based on data from two  StackExchange platforms: ask ubuntu and Web Applications     2. Gathers 290 questions and answers in total, 100 from Web Applications  and 190 from ask ubuntu     3. For intent classification test </td>
+		<td> Download:         https://github.com/sebischair/NLU-Evaluation-Corpora       Paper:      https://www.aclweb.org/anthology/W17-5522.pdf </td>
+		<td> S                       </td>
+		<td> Ask ubuntu Intents: “Make Update”, “Setup Printer”, “Shutdown  Computer”, and “Software Recommendation”     Web Applications Intents: “Change  Password”, “Delete Account”, “Download Video”, “Export Data”, “Filter Spam”,  “Find Alternative”, and “Sync Accounts” </td>
+		<td> Total: 290     Ask ubuntu: 190     Web Application: 100      </td>
+		<td> Intent Entity                                                </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> MixSNIPS/MixATIS                   </td></code>
+		<td> multi-intent dataset based on SNIPS and ATIS                 </td>
+		<td> Download:      https://github.com/LooperXX/AGIF/tree/master/data      Paper:      https://www.aclweb.org/anthology/2020.findings-emnlp.163.pdf </td>
+		<td> S                       </td>
+		<td> using conjunctions, connecting sentences with different  intents forming a ratio of 0.3,0.5 and 0.2 for sentences has which 1,2 and 3  intents, respectively </td>
+		<td> Train:12,759 utterances     Dev:4,812 utterances     Test:7,848 utterances </td>
+		<td> Intent(Multi),Slots                                          </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> TOP semantic parsing               </td></code>
+		<td> 1,Hierarchical annotation scheme for semantic parsing     2,Allows the representation of compositional queries     3,Can be efficiently and accurately parsed by standard constituency parsing  models </td>
+		<td> Download:      http://fb.me/semanticparsingdialog      Paper:      https://www.aclweb.org/anthology/D18-1300.pdf </td>
+		<td> S                       </td>
+		<td> focused on navigation, events, and navigation to events     evaluation script can be run from evaluate.py within the dataset </td>
+		<td> 44783 annotations     Train:31279     Dev:4462     Test:9042 </td>
+		<td> Inten ,Slots in Tree  format                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> MTOP: Multilingual TOP             </td></code>
+		<td> 1.An almost-parallel multilingual task-oriented semantic  parsing dataset covering 6 languages and 11 domains.     2.the first multilingual dataset that contain compositional representations  that allow complex nested queries.     3.the dataset creation: i) generating synthetic utterances and annotating  in English, ii) translation, label transfer, post-processing, post editing  and filtering for other languages </td>
+		<td> Download:      https://fb.me/mtop_dataset      Paper:      https://arxiv.org/pdf/2008.09335.pdf </td>
+		<td> S                       </td>
+		<td> 6 languages (both high  and low resource): English, Spanish, French, German, Hindi and Thai.       a mix of both simple as well as  compositional nested queries across 11 domains, 117 intents and 78 slots. </td>
+		<td> 100k examples in total for 6 languages.     Roughly divided into 70:10:20 percent splits for train,eval and test. </td>
+		<td> Two kinds of  representations:     1.flat representatiom: Intent and slots     2.compositional decoupled representations:nested intents inside slots     More details 3.2 section in the paper </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> CAIS                               </td></code>
+		<td> Collected from real world speaker systems  with manual annotations of slot tags and intent labels </td>
+		<td> [https://github.com/Adaxry/CM-Net](https://github.com/Adaxry/CM-Net/tree/master/CAIS) </td>
+		<td> S                       </td>
+		<td> 1.The utterances were collected from the Chinese Artificial Intelligence Speakers 2.Adopt the BIOES tagging scheme for slots instead of the BIO2 used in the ATIS 3.intent labels are partial to the PlayMusic option </td>
+		<td> Train: 7,995 utterances Dev: 994 utterances Test: 1024 utterances </td>
+		<td> slots tags and intent labels                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Simulated Dialogues dataset        </td></code>
+		<td> machines2machines (M2M)                                      </td>
+		<td> Download: https://github.com/google-research-datasets/simulated-dialogue Paper: http://www.colips.org/workshop/dstc4/papers/60.pdf </td>
+		<td> M                       </td>
+		<td> Slots: Sim-R (Restaurant)        price_range, location, restaurant_name, category, num_people, date, time Sim-M (Movie)        theatre_name, movie, date, time, num_people Sim-GEN (Movie):theatre_name, movie, date, time, num_people </td>
+		<td> Train: Sim-R:1116 Sim-M:384 Sim-GEN:100k Dev: Sim-R:349 Sim-M:120 Sim-GEN:10k Test: Sim-R:775 Sim-M:264 Sim-GEN:10k </td>
+		<td> Dialogue state User's act,slot,intent System's act,slot      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Schema-Guided Dialogue Dataset(SGD) </td></code>
+		<td> dialogue simulation(auto based on identified scenarios), word-replacement and human intergration as paraphrasing</td>
+		<td> Download:  https://github.com/google-researchdatasets/dstc8-schema-guided-dialogue Paper: https://arxiv.org/pdf/1909.05855.pdf </td>
+		<td> M                       </td>
+		<td> domains:16,dialogues:16142,turns:329964,acg turns per dialogue:20.44,total unique tokens:30352,slots:214,slot values:14319</td>
+		<td> NA </td>
+		<td>   Scheme Representation: service_name;description;slot's name,description,is_categorial,possible_values;intent's name,description,is_transactional,required_slots,optional_slots,result_slots. Dialogue Representation: dialogue_id,services,turns,speaker,utterance,frame,service,slot's name,start,exclusive_end;action's act,slot,values,canonical_values;service_call's method,parameters;service_results,state's active_intent,requested_slots,slot_values </td>
+		<td></td>
+</tr>
+</tbody >
 
 
 ## Frontiers
@@ -318,97 +474,694 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 
 #### Non-pretrained model
 
-| Model                                                        | Intent Acc | Slot F1 | Paper / Source                                               | Code link                                               | Conference                                  |
-| ------------------------------------------------------------ | ---------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------- | ------------------------------------------- |
-| Co-Interactive(Qin et al., 2021)                         | 97.7       | 95.9    | A Co-Interactive Transformer for Joint Slot Filling and Intent Detection  [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) | https://github.com/kangbrilliant/DCA-Net      | ICASSP  |
-| Graph LSTM(Zhang et al., 2021)                         | 97.20      | 95.91    | Graph LSTM with Context-Gated Mechanism for Spoken Language Understanding  [[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/6499/6355) | -      | AAAI  |
-| Stack  Propagation(Qin et al., 2019)                         | 96.9       | 95.9    | A   Stack-Propagation Framework with Token-Level Intent Detection for Spoken   Language Understanding  [[pdf]](https://arxiv.org/pdf/1909.02188.pdf) | https://github.com/LeePleased/StackPropagation-SLU      | EMNLP  |
-| SF-ID+CRF(SF first)(E et al., 2019)         | 97.76      | 95.75   | A Novel   Bi-directional Interrelated Model for Joint Intent Detection and Slot   Filling [[pdf]](https://www.aclweb.org/anthology/P19-1544.pdf) |                                                       | ACL        |
-| SF-ID+CRF(ID first)(E et al., 2019)         | 97.09      | 95.8    | A Novel   Bi-directional Interrelated Model for Joint Intent Detection and Slot   Filling [[pdf]](https://www.aclweb.org/anthology/P19-1544.pdf) | https://github.com/ZephyrChenzf/SF-ID-Network-For-NLU | ACL        |
-| Capsule-NLU(Zhang  et al. 2019)                              | 95         | 95.2    | Joint Slot   Filling and Intent Detection via Capsule Neural Networks [[pdf]](https://arxiv.org/pdf/1812.09471.pdf) | https://github.com/czhang99/Capsule-NLU                 | ACL                                         |
-| Utterance  Generation With Variational Auto-Encoder(Guo et al., 2019) | -          | 95.04   | Utterance  Generation With Variational Auto-Encoder for Slot Filling in Spoken Language  Understanding [[pdf]](https://ieeexplore.ieee.org/document/8625384) | -                                                       | IEEE Signal Processing Letters              |
-| JULVA(full)(Yoo  et al., 2019)                               | 97.24      | 95.51   | Data Augmentation   for Spoken Language Understanding via Joint Variational Generation [[pdf]](https://arxiv.org/pdf/1809.02305.pdf) | -                                                       | AAAI                                        |
-| CM-Net(Liu  et al., 2019)                               | 99.1      | 96.20   | CM-Net: A Novel Collaborative Memory Network for Spoken Language Understanding[[pdf]](https://www.aclweb.org/anthology/D19-1097.pdf)| https://github.com/Adaxry/CM-Net    | EMNLP                                        |
-| Data  noising method(Kim et al., 2019)                       | 98.43      | 96.20    | Data  augmentation by data noising for open vocabulary slots in spoken language  understanding [[pdf]](https://www.aclweb.org/anthology/N19-3014.pdf) | -                                                       | NAACL-HLT                                   |
-| ACD(Zhu  et al., 2018)                                       | -          | 96.08   | Concept   Transfer Learning for Adaptive Language Understanding [[pdf]](https://www.aclweb.org/anthology/W18-5047.pdf) | -                                                       | SIGDIAL                                     |
-| A Self-Attentive Model with Gate Mechanism(Li et al., 2018)  | 98.77      | 96.52   | A   Self-Attentive Model with Gate Mechanism for Spoken Language   Understanding [[pdf]](https://www.aclweb.org/anthology/D18-1417.pdf) | -                                                       | EMNLP                                       |
-| Slot-Gated(Goo  et al., 2018)                                | 94.1       | 95.2    | Slot-Gated   Modeling for Joint Slot Filling and Intent Prediction [[pdf]](https://www.aclweb.org/anthology/N18-2118.pdf) | https://github.com/MiuLab/SlotGated-SLU                 | NAACL                                       |
-| DRL based Augmented Tagging System(Wang et al., 2018)        | -          | 97.86   | A  New Concept of Deep Reinforcement Learning based Augmented General Sequence  Tagging System [[pdf]](https://www.aclweb.org/anthology/C18-1143.pdf) | -                                                       | COLING      |
-| Bi-model(Wang  et al., 2018)                                 | 98.76      | 96.65   | A Bi-model based   RNN Semantic Frame Parsing Model for Intent Detection and Slot Filling [[pdf]](https://arxiv.org/pdf/1812.10235.pdf) | -                                                       | NAACL                                       |
-| Bi-model+decoder(Wang  et al., 2018)        | 98.99      | 96.89   | A Bi-model based   RNN Semantic Frame Parsing Model for Intent Detection and Slot Filling [[pdf]](https://arxiv.org/pdf/1812.10235.pdf) | -                                                     | NAACL      |
-| Seq2Seq DA for LU(Hou et al., 2018)                          | -          | 94.82   | Sequence-to-Sequence  Data Augmentation for Dialogue Language Understanding [[pdf]](https://arxiv.org/pdf/1807.01554.pdf) | https://github.com/AtmaHou/Seq2SeqDataAugmentationForLU | COLING                                      |
-| BLSTM-LSTM(Zhu  et al., 2017)                                | -          | 95.79   | ENCODER-DECODER  WITH FOCUS-MECHANISM FOR SEQUENCE LABELLING BASED SPOKEN LANGUAGE  UNDERSTANDING  [[pdf]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7953243) | -                                                       | ICASSP                                      |
-| neural  sequence chunking model(Zhai et al., 2017)           | -          | 95.86   | Neural  Models for Sequence Chunking [[pdf]](https://arxiv.org/pdf/1701.04027.pdf) | -                                                       | AAAI                                        |
-| Joint  Model of ID and SF(Zhang et al., 2016)                | 98.32      | 96.89   | A   Joint Model of Intent Determination and Slot Filling for Spoken Language   Understanding [[pdf]](https://www.ijcai.org/Proceedings/16/Papers/425.pdf) | -                                                       | IJCAI                                       |
-| Attention Encoder-Decoder NN (with aligned inputs)           | 98.43      | 95.87   | Attention-Based   Recurrent Neural Network Models for Joint Intent Detectionand Slot   Filling      [[pdf]](https://arxiv.org/pdf/1609.01454.pdf) | -                                                       | InterSpeech                                 |
-| Attention  BiRNN(Liu et al., 2016)                           | 98.21      | 95.98   | Attention-Based   Recurrent Neural Network Models for Joint Intent Detectionand Slot   Filling      [[pdf]](https://arxiv.org/pdf/1609.01454.pdf) | -                                                       | InterSpeech                                 |
-| Joint  SLU-LM model(Liu ei al., 2016)                        | 98.43      | 94.64   | Joint Online   Spoken Language Understanding and Language Modeling with Recurrent Neural   Networks [[pdf]](https://arxiv.org/pdf/1609.01462.pdf) | http://speech.sv.cmu.edu/software.html                  | SIGDIAL                                     |
-| RNN-LSTM(Hakkani-Tur  et al., 2016)                          | 94.3       | 92.6    | Multi-Domain Joint Semantic Frame Parsing using   Bi-directional RNN-LSTM [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/IS16_MultiJoint.pdf) | -                                                       | InterSpeech                                 |
-| R-biRNN(Vu  et al., 2016)                                    | -          | 95.47   | Bi-directional   recurrent neural network with ranking loss for spoken language   understanding      [[pdf]](https://ieeexplore.ieee.org/abstract/document/7472841/) | -                                                       | IEEE                                        |
-| Encoder-labeler  LSTM(Kurata et al., 2016)                   | -          | 95.4    | Leveraging Sentence-level Information with  Encoder LSTM for Semantic Slot Filling [[pdf]](https://www.aclweb.org/anthology/D16-1223.pdf) | -                                                       | EMNLP                                       |
-| Encoder-labeler  Deep LSTM(Kurata et al., 2016)              | -          | 95.66   | Leveraging Sentence-level Information with  Encoder LSTM for Semantic Slot Filling [[pdf]](https://www.aclweb.org/anthology/D16-1223.pdf) |                                                         | EMNLP                                       |
-| 5xR-biRNN(Vu  et al., 2016)                 | -          | 95.56   | Bi-directional  recurrent neural network with ranking loss for spoken language  understanding [[pdf]](https://ieeexplore.ieee.org/abstract/document/7472841/) | -                                                     | IEEE       |
-| Data  Generation for SF(Kurata et al., 2016)                 | -          | 95.32   | Labeled  Data Generation with Encoder-decoder LSTM for Semantic Slot Filling [[pdf]](https://www.isca-speech.org/archive/Interspeech_2016/pdfs/0727.PDF) | -                                                       | InterSpeech                                 |
-| RNN-EM(Peng  et al., 2015)                                   | -          | 95.25   | Recurrent Neural   Networks with External Memory for Language Understanding [[pdf]](https://arxiv.org/pdf/1506.00195.pdf) | -                                                       | InterSpeech                                 |
-| RNN  trained with sampled label(Liu et al., 2015)            | -          | 94.89   | Recurrent Neural Network Structured Output Prediction for   Spoken Language Understanding      [[pdf]](http://speech.sv.cmu.edu/publications/liu-nipsslu-2015.pdf) | -                                                       | -                                           |
-| RNN(Ravuri  et al., 2015)                                    | 97.55      | -       | Recurrent neural network and LSTM models for  lexical utterance classification [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/RNNLM_addressee.pdf) | -                                                       | InterSpeech                                 |
-| LSTM(Ravuri  et al., 2015)                                   | 98.06      | -       | Recurrent neural network and LSTM models for  lexical utterance classification [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/RNNLM_addressee.pdf) | -                                                       | InterSpeech                                 |
-| Hybrid  RNN(Mesnil et al., 2015)                             | -          | 95.06   | Using  Recurrent Neural Networks for Slot Filling in Spoken Language  Understanding [[pdf]](https://ieeexplore.ieee.org/document/6998838) | -                                                       | IEEE/ACM-TASLP                              |
-| RecNN(Guo  et al., 2014)                                     | 95.4       | 93.22   | Joint semantic utterance classification and slot filling with   recursive neural networks [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2014/12/RecNNSLU.pdf) | -                                                       | IEEE-SLT                                    |
-| LSTM(Yao  et al., 2014)                                      | -          | 94.85   | Spoken Language Understading Using Long  Short-Term Memory Neural Networks [[pdf]](https://groups.csail.mit.edu/sls/publications/2014/Zhang_SLT_2014.pdf) | -                                                       | IEEE                                        |
-| Deep  LSTM(Yao et al., 2014)                                 | -          | 95.08   | Spoken Language Understading Using Long  Short-Term Memory Neural Networks [[pdf]](https://groups.csail.mit.edu/sls/publications/2014/Zhang_SLT_2014.pdf) | -                                                       | IEEE                                        |
-| R-CRF(Yao  et al., 2014)                                     | -          | 96.65   | Recurrent  conditional random field for language understanding [[pdf]](https://ieeexplore.ieee.org/document/6854368) | -                                                       | IEEE                                        |
-| RecNN+Viterbi(Guo  et al., 2014)            | 95.4       | 93.96   | Joint semantic utterance classification and slot filling with   recursive neural networks [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2014/12/RecNNSLU.pdf) | -                                                     | IEEE-SLT   |
-| CNN  CRF(Xu et al., 2013)                                    | 94.09      | 5.42   | Convolutional neural network based triangular crf for joint   intent detection and slot filling [[pdf]]((http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.642.7548&rep=rep1&type=pdf)) | -                                                       | IEEE                                        |
-| RNN(Yao  et al., 2013)                                       | -          | 94.11   | Recurrent  Neural Networks for Language Understanding [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/kaisheny-338_file_paper.pdf) | -                                                       | InterSpeech                                 |
-| Bi-dir.  Jordan-RNN(2013)                                    | -          | 93.98   | Investigation  of Recurrent-Neural-Network Architectures and Learning Methods for Spoken  Language Understanding [[pdf]](https://www.isca-speech.org/archive/archive_papers/interspeech_2013/i13_3771.pdf) | -                                                       | ISCA                                        |
-
+<div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
+<table style="width:100%" border="2">
+<thead>
+  <tr>
+    <th> Model</th>
+    <th>Intent Acc</th>
+    <th>Slot F1</th>
+    <th>Paper / Source</th>
+    <th>Code link</th>
+    <th>Conference</th>
+  </tr>
+</thead>
+<tbody >
+<tr>
+	<td><code> Co-Interactive(Qin et al., 2021)                         </td></code>
+		<td> 97.7       </td>
+		<td> 95.9    </td>
+		<td> A Co-Interactive Transformer for Joint Slot Filling and Intent Detection  [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) </td>
+		<td> https://github.com/kangbrilliant/DCA-Net      </td>
+		<td> ICASSP  </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Graph LSTM(Zhang et al., 2021)                         </td></code>
+		<td> 97.20      </td>
+		<td> 95.91    </td>
+		<td> Graph LSTM with Context-Gated Mechanism for Spoken Language Understanding  [[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/6499/6355) </td>
+		<td> -      </td>
+		<td> AAAI  </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Stack  Propagation(Qin et al., 2019)                         </td></code>
+		<td> 96.9       </td>
+		<td> 95.9    </td>
+		<td> A   Stack-Propagation Framework with Token-Level Intent Detection for Spoken   Language Understanding  [[pdf]](https://arxiv.org/pdf/1909.02188.pdf) </td>
+		<td> https://github.com/LeePleased/StackPropagation-SLU      </td>
+		<td> EMNLP  </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> SF-ID+CRF(SF first)(E et al., 2019)         </td></code>
+		<td> 97.76      </td>
+		<td> 95.75   </td>
+		<td> A Novel   Bi-directional Interrelated Model for Joint Intent Detection and Slot   Filling [[pdf]](https://www.aclweb.org/anthology/P19-1544.pdf) </td>
+		<td>                                                       </td>
+		<td> ACL        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> SF-ID+CRF(ID first)(E et al., 2019)         </td></code>
+		<td> 97.09      </td>
+		<td> 95.8    </td>
+		<td> A Novel   Bi-directional Interrelated Model for Joint Intent Detection and Slot   Filling [[pdf]](https://www.aclweb.org/anthology/P19-1544.pdf) </td>
+		<td> https://github.com/ZephyrChenzf/SF-ID-Network-For-NLU </td>
+		<td> ACL        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Capsule-NLU(Zhang  et al. 2019)                              </td></code>
+		<td> 95         </td>
+		<td> 95.2    </td>
+		<td> Joint Slot   Filling and Intent Detection via Capsule Neural Networks [[pdf]](https://arxiv.org/pdf/1812.09471.pdf) </td>
+		<td> https://github.com/czhang99/Capsule-NLU                 </td>
+		<td> ACL                                         </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Utterance  Generation With Variational Auto-Encoder(Guo et al., 2019) </td></code>
+		<td> -          </td>
+		<td> 95.04   </td>
+		<td> Utterance  Generation With Variational Auto-Encoder for Slot Filling in Spoken Language  Understanding [[pdf]](https://ieeexplore.ieee.org/document/8625384) </td>
+		<td> -                                                       </td>
+		<td> IEEE Signal Processing Letters              </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> JULVA(full)(Yoo  et al., 2019)                               </td></code>
+		<td> 97.24      </td>
+		<td> 95.51   </td>
+		<td> Data Augmentation   for Spoken Language Understanding via Joint Variational Generation [[pdf]](https://arxiv.org/pdf/1809.02305.pdf) </td>
+		<td> -                                                       </td>
+		<td> AAAI                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> CM-Net(Liu  et al., 2019)                               </td></code>
+		<td> 99.1      </td>
+		<td> 96.20   </td>
+		<td> CM-Net: A Novel Collaborative Memory Network for Spoken Language Understanding[[pdf]](https://www.aclweb.org/anthology/D19-1097.pdf)</td>
+		<td> https://github.com/Adaxry/CM-Net    </td>
+		<td> EMNLP                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Data  noising method(Kim et al., 2019)                       </td></code>
+		<td> 98.43      </td>
+		<td> 96.20    </td>
+		<td> Data  augmentation by data noising for open vocabulary slots in spoken language  understanding [[pdf]](https://www.aclweb.org/anthology/N19-3014.pdf) </td>
+		<td> -                                                       </td>
+		<td> NAACL-HLT                                   </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> ACD(Zhu  et al., 2018)                                       </td></code>
+		<td> -          </td>
+		<td> 96.08   </td>
+		<td> Concept   Transfer Learning for Adaptive Language Understanding [[pdf]](https://www.aclweb.org/anthology/W18-5047.pdf) </td>
+		<td> -                                                       </td>
+		<td> SIGDIAL                                     </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> A Self-Attentive Model with Gate Mechanism(Li et al., 2018)  </td></code>
+		<td> 98.77      </td>
+		<td> 96.52   </td>
+		<td> A   Self-Attentive Model with Gate Mechanism for Spoken Language   Understanding [[pdf]](https://www.aclweb.org/anthology/D18-1417.pdf) </td>
+		<td> -                                                       </td>
+		<td> EMNLP                                       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Slot-Gated(Goo  et al., 2018)                                </td></code>
+		<td> 94.1       </td>
+		<td> 95.2    </td>
+		<td> Slot-Gated   Modeling for Joint Slot Filling and Intent Prediction [[pdf]](https://www.aclweb.org/anthology/N18-2118.pdf) </td>
+		<td> https://github.com/MiuLab/SlotGated-SLU                 </td>
+		<td> NAACL                                       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> DRL based Augmented Tagging System(Wang et al., 2018)        </td></code>
+		<td> -          </td>
+		<td> 97.86   </td>
+		<td> A  New Concept of Deep Reinforcement Learning based Augmented General Sequence  Tagging System [[pdf]](https://www.aclweb.org/anthology/C18-1143.pdf) </td>
+		<td> -                                                       </td>
+		<td> COLING      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Bi-model(Wang  et al., 2018)                                 </td></code>
+		<td> 98.76      </td>
+		<td> 96.65   </td>
+		<td> A Bi-model based   RNN Semantic Frame Parsing Model for Intent Detection and Slot Filling [[pdf]](https://arxiv.org/pdf/1812.10235.pdf) </td>
+		<td> -                                                       </td>
+		<td> NAACL                                       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Bi-model+decoder(Wang  et al., 2018)        </td></code>
+		<td> 98.99      </td>
+		<td> 96.89   </td>
+		<td> A Bi-model based   RNN Semantic Frame Parsing Model for Intent Detection and Slot Filling [[pdf]](https://arxiv.org/pdf/1812.10235.pdf) </td>
+		<td> -                                                     </td>
+		<td> NAACL      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Seq2Seq DA for LU(Hou et al., 2018)                          </td></code>
+		<td> -          </td>
+		<td> 94.82   </td>
+		<td> Sequence-to-Sequence  Data Augmentation for Dialogue Language Understanding [[pdf]](https://arxiv.org/pdf/1807.01554.pdf) </td>
+		<td> https://github.com/AtmaHou/Seq2SeqDataAugmentationForLU </td>
+		<td> COLING                                      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> BLSTM-LSTM(Zhu  et al., 2017)                                </td></code>
+		<td> -          </td>
+		<td> 95.79   </td>
+		<td> ENCODER-DECODER  WITH FOCUS-MECHANISM FOR SEQUENCE LABELLING BASED SPOKEN LANGUAGE  UNDERSTANDING  [[pdf]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7953243) </td>
+		<td> -                                                       </td>
+		<td> ICASSP                                      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> neural  sequence chunking model(Zhai et al., 2017)           </td></code>
+		<td> -          </td>
+		<td> 95.86   </td>
+		<td> Neural  Models for Sequence Chunking [[pdf]](https://arxiv.org/pdf/1701.04027.pdf) </td>
+		<td> -                                                       </td>
+		<td> AAAI                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  Model of ID and SF(Zhang et al., 2016)                </td></code>
+		<td> 98.32      </td>
+		<td> 96.89   </td>
+		<td> A   Joint Model of Intent Determination and Slot Filling for Spoken Language   Understanding [[pdf]](https://www.ijcai.org/Proceedings/16/Papers/425.pdf) </td>
+		<td> -                                                       </td>
+		<td> IJCAI                                       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Attention Encoder-Decoder NN (with aligned inputs)           </td></code>
+		<td> 98.43      </td>
+		<td> 95.87   </td>
+		<td> Attention-Based   Recurrent Neural Network Models for Joint Intent Detectionand Slot   Filling      [[pdf]](https://arxiv.org/pdf/1609.01454.pdf) </td>
+		<td> -                                                       </td>
+		<td> InterSpeech                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Attention  BiRNN(Liu et al., 2016)                           </td></code>
+		<td> 98.21      </td>
+		<td> 95.98   </td>
+		<td> Attention-Based   Recurrent Neural Network Models for Joint Intent Detectionand Slot   Filling      [[pdf]](https://arxiv.org/pdf/1609.01454.pdf) </td>
+		<td> -                                                       </td>
+		<td> InterSpeech                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  SLU-LM model(Liu ei al., 2016)                        </td></code>
+		<td> 98.43      </td>
+		<td> 94.64   </td>
+		<td> Joint Online   Spoken Language Understanding and Language Modeling with Recurrent Neural   Networks [[pdf]](https://arxiv.org/pdf/1609.01462.pdf) </td>
+		<td> http://speech.sv.cmu.edu/software.html                  </td>
+		<td> SIGDIAL                                     </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> RNN-LSTM(Hakkani-Tur  et al., 2016)                          </td></code>
+		<td> 94.3       </td>
+		<td> 92.6    </td>
+		<td> Multi-Domain Joint Semantic Frame Parsing using   Bi-directional RNN-LSTM [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/IS16_MultiJoint.pdf) </td>
+		<td> -                                                       </td>
+		<td> InterSpeech                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> R-biRNN(Vu  et al., 2016)                                    </td></code>
+		<td> -          </td>
+		<td> 95.47   </td>
+		<td> Bi-directional   recurrent neural network with ranking loss for spoken language   understanding      [[pdf]](https://ieeexplore.ieee.org/abstract/document/7472841/) </td>
+		<td> -                                                       </td>
+		<td> IEEE                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Encoder-labeler  LSTM(Kurata et al., 2016)                   </td></code>
+		<td> -          </td>
+		<td> 95.4    </td>
+		<td> Leveraging Sentence-level Information with  Encoder LSTM for Semantic Slot Filling [[pdf]](https://www.aclweb.org/anthology/D16-1223.pdf) </td>
+		<td> -                                                       </td>
+		<td> EMNLP                                       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Encoder-labeler  Deep LSTM(Kurata et al., 2016)              </td></code>
+		<td> -          </td>
+		<td> 95.66   </td>
+		<td> Leveraging Sentence-level Information with  Encoder LSTM for Semantic Slot Filling [[pdf]](https://www.aclweb.org/anthology/D16-1223.pdf) </td>
+		<td>                                                         </td>
+		<td> EMNLP                                       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> 5xR-biRNN(Vu  et al., 2016)                 </td></code>
+		<td> -          </td>
+		<td> 95.56   </td>
+		<td> Bi-directional  recurrent neural network with ranking loss for spoken language  understanding [[pdf]](https://ieeexplore.ieee.org/abstract/document/7472841/) </td>
+		<td> -                                                     </td>
+		<td> IEEE       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Data  Generation for SF(Kurata et al., 2016)                 </td></code>
+		<td> -          </td>
+		<td> 95.32   </td>
+		<td> Labeled  Data Generation with Encoder-decoder LSTM for Semantic Slot Filling [[pdf]](https://www.isca-speech.org/archive/Interspeech_2016/pdfs/0727.PDF) </td>
+		<td> -                                                       </td>
+		<td> InterSpeech                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> RNN-EM(Peng  et al., 2015)                                   </td></code>
+		<td> -          </td>
+		<td> 95.25   </td>
+		<td> Recurrent Neural   Networks with External Memory for Language Understanding [[pdf]](https://arxiv.org/pdf/1506.00195.pdf) </td>
+		<td> -                                                       </td>
+		<td> InterSpeech                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> RNN  trained with sampled label(Liu et al., 2015)            </td></code>
+		<td> -          </td>
+		<td> 94.89   </td>
+		<td> Recurrent Neural Network Structured Output Prediction for   Spoken Language Understanding      [[pdf]](http://speech.sv.cmu.edu/publications/liu-nipsslu-2015.pdf) </td>
+		<td> -                                                       </td>
+		<td> -                                           </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> RNN(Ravuri  et al., 2015)                                    </td></code>
+		<td> 97.55      </td>
+		<td> -       </td>
+		<td> Recurrent neural network and LSTM models for  lexical utterance classification [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/RNNLM_addressee.pdf) </td>
+		<td> -                                                       </td>
+		<td> InterSpeech                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> LSTM(Ravuri  et al., 2015)                                   </td></code>
+		<td> 98.06      </td>
+		<td> -       </td>
+		<td> Recurrent neural network and LSTM models for  lexical utterance classification [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/RNNLM_addressee.pdf) </td>
+		<td> -                                                       </td>
+		<td> InterSpeech                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Hybrid  RNN(Mesnil et al., 2015)                             </td></code>
+		<td> -          </td>
+		<td> 95.06   </td>
+		<td> Using  Recurrent Neural Networks for Slot Filling in Spoken Language  Understanding [[pdf]](https://ieeexplore.ieee.org/document/6998838) </td>
+		<td> -                                                       </td>
+		<td> IEEE/ACM-TASLP                              </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> RecNN(Guo  et al., 2014)                                     </td></code>
+		<td> 95.4       </td>
+		<td> 93.22   </td>
+		<td> Joint semantic utterance classification and slot filling with   recursive neural networks [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2014/12/RecNNSLU.pdf) </td>
+		<td> -                                                       </td>
+		<td> IEEE-SLT                                    </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> LSTM(Yao  et al., 2014)                                      </td></code>
+		<td> -          </td>
+		<td> 94.85   </td>
+		<td> Spoken Language Understading Using Long  Short-Term Memory Neural Networks [[pdf]](https://groups.csail.mit.edu/sls/publications/2014/Zhang_SLT_2014.pdf) </td>
+		<td> -                                                       </td>
+		<td> IEEE                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Deep  LSTM(Yao et al., 2014)                                 </td></code>
+		<td> -          </td>
+		<td> 95.08   </td>
+		<td> Spoken Language Understading Using Long  Short-Term Memory Neural Networks [[pdf]](https://groups.csail.mit.edu/sls/publications/2014/Zhang_SLT_2014.pdf) </td>
+		<td> -                                                       </td>
+		<td> IEEE                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> R-CRF(Yao  et al., 2014)                                     </td></code>
+		<td> -          </td>
+		<td> 96.65   </td>
+		<td> Recurrent  conditional random field for language understanding [[pdf]](https://ieeexplore.ieee.org/document/6854368) </td>
+		<td> -                                                       </td>
+		<td> IEEE                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> RecNN+Viterbi(Guo  et al., 2014)            </td></code>
+		<td> 95.4       </td>
+		<td> 93.96   </td>
+		<td> Joint semantic utterance classification and slot filling with   recursive neural networks [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2014/12/RecNNSLU.pdf) </td>
+		<td> -                                                     </td>
+		<td> IEEE-SLT   </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> CNN  CRF(Xu et al., 2013)                                    </td></code>
+		<td> 94.09      </td>
+		<td> 5.42   </td>
+		<td> Convolutional neural network based triangular crf for joint   intent detection and slot filling [[pdf]]((http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.642.7548&rep=rep1&type=pdf)) </td>
+		<td> -                                                       </td>
+		<td> IEEE                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> RNN(Yao  et al., 2013)                                       </td></code>
+		<td> -          </td>
+		<td> 94.11   </td>
+		<td> Recurrent  Neural Networks for Language Understanding [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/kaisheny-338_file_paper.pdf) </td>
+		<td> -                                                       </td>
+		<td> InterSpeech                                 </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Bi-dir.  Jordan-RNN(2013)                                    </td></code>
+		<td> -          </td>
+		<td> 93.98   </td>
+		<td> Investigation  of Recurrent-Neural-Network Architectures and Learning Methods for Spoken  Language Understanding [[pdf]](https://www.isca-speech.org/archive/archive_papers/interspeech_2013/i13_3771.pdf) </td>
+		<td> -                                                       </td>
+		<td> ISCA                                        </td>
+		<td></td>
+</tr>
+</tbody>
 
 
 #### + Pretrained model
-
-| Model                                       | Intent Acc | Slot F1 | Paper/Source                                                 | Code link                                             | Conference |
-| ------------------------------------------- | ---------- | ------- | ------------------------------------------------------------ | ----------------------------------------------------- | ---------- |
-| Co-Interactive(Qin et al., 2021)                         | 98.0       | 96.1    | A Co-Interactive Transformer for Joint Slot Filling and Intent Detection  [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) | https://github.com/kangbrilliant/DCA-Net      | ICASSP  |
-| Stack  Propagation+BERT(Qin et al., 2019)   | 97.5       | 96.1    | A   Stack-Propagation Framework with Token-Level Intent Detection for Spoken   Language Understanding [[pdf]](https://arxiv.org/pdf/1909.02188.pdf) | https://github.com/LeePleased/StackPropagation-SLU    | EMNLP      |
-| Bert-Joint(Castellucci  et al., 2019)       | 97.8       | 95.7    | Multi-lingual  Intent Detection and Slot Filling in a Joint BERT-based Model [[pdf]](https://arxiv.org/pdf/1907.02884.pdf) | -                                                     | arXiv      |
-| BERT-SLU(Zhang  et al., 2019)               | 99.76      | 98.75   | A Joint   Learning Framework With BERT for Spoken Language Understanding [[pdf]](https://ieeexplore.ieee.org/document/8907842) | -                                                     | IEEE       |
-| Joint  BERT(Chen et al., 2019)              | 97.5       | 96.1    | BERT for Joint   Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) | https://github.com/monologg/JointBERT                 | arXiv      |
-| Joint  BERT+CRF(Chen et al., 2019)          | 97.9       | 96      | BERT for Joint   Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) | https://github.com/monologg/JointBERT                 | arXiv      |
-| ELMo-Light  (ELMoL) (Siddhant et al., 2019) | 97.3       | 95.42   | Unsupervised   Transfer Learning for Spoken Language Understanding in Intelligent Agents [[pdf]](https://arxiv.org/pdf/1811.05370.pdf) | -                                                     | AAAI       |
+<div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
+<table style="width:100%" border="2">
+<thead>
+  <tr>
+    <th> Model</th>
+    <th>Intent Acc</th>
+    <th>Slot F1</th>
+    <th>Paper / Source</th>
+    <th>Code link</th>
+    <th>Conference</th>
+  </tr>
+</thead>
+<tbody >
+<tr>
+	<td><code> Co-Interactive(Qin et al., 2021)                         </td></code>
+		<td> 98.0       </td>
+		<td> 96.1    </td>
+		<td> A Co-Interactive Transformer for Joint Slot Filling and Intent Detection  [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) </td>
+		<td> https://github.com/kangbrilliant/DCA-Net      </td>
+		<td> ICASSP  </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Stack  Propagation+BERT(Qin et al., 2019)   </td></code>
+		<td> 97.5       </td>
+		<td> 96.1    </td>
+		<td> A   Stack-Propagation Framework with Token-Level Intent Detection for Spoken   Language Understanding [[pdf]](https://arxiv.org/pdf/1909.02188.pdf) </td>
+		<td> https://github.com/LeePleased/StackPropagation-SLU    </td>
+		<td> EMNLP      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Bert-Joint(Castellucci  et al., 2019)       </td></code>
+		<td> 97.8       </td>
+		<td> 95.7    </td>
+		<td> Multi-lingual  Intent Detection and Slot Filling in a Joint BERT-based Model [[pdf]](https://arxiv.org/pdf/1907.02884.pdf) </td>
+		<td> -                                                     </td>
+		<td> arXiv      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> BERT-SLU(Zhang  et al., 2019)               </td></code>
+		<td> 99.76      </td>
+		<td> 98.75   </td>
+		<td> A Joint   Learning Framework With BERT for Spoken Language Understanding [[pdf]](https://ieeexplore.ieee.org/document/8907842) </td>
+		<td> -                                                     </td>
+		<td> IEEE       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  BERT(Chen et al., 2019)              </td></code>
+		<td> 97.5       </td>
+		<td> 96.1    </td>
+		<td> BERT for Joint   Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) </td>
+		<td> https://github.com/monologg/JointBERT                 </td>
+		<td> arXiv      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  BERT+CRF(Chen et al., 2019)          </td></code>
+		<td> 97.9       </td>
+		<td> 96      </td>
+		<td> BERT for Joint   Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) </td>
+		<td> https://github.com/monologg/JointBERT                 </td>
+		<td> arXiv      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> ELMo-Light  (ELMoL) (Siddhant et al., 2019) </td></code>
+		<td> 97.3       </td>
+		<td> 95.42   </td>
+		<td> Unsupervised   Transfer Learning for Spoken Language Understanding in Intelligent Agents [[pdf]](https://arxiv.org/pdf/1811.05370.pdf) </td>
+		<td> -                                                     </td>
+		<td> AAAI       </td>
+		<td></td>
+</tr>
+</tbody >
 
 
 ### SNIPS
 
 #### Non-pretrained model
-
-| Model                                                        | Intent Acc | Slot F1 | Paper / Source                                               | Code link                                                    | Conference                     |
-| ------------------------------------------------------------ | ---------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------ |
-| Co-Interactive(Qin et al., 2021)                         | 98.8       | 95.9    | A Co-Interactive Transformer for Joint Slot Filling and Intent Detection  [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) | https://github.com/kangbrilliant/DCA-Net      | ICASSP  |
-| Graph LSTM(Zhang et al., 2021)                         | 98.29      | 95.30    | Graph LSTM with Context-Gated Mechanism for Spoken Language Understanding  [[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/6499/6355) | -      | AAAI  |
-| SF-ID  Network(E et al, 2019)                                | 97.43      | 91.43   | A  Novel Bi-directional Interrelated Model for Joint Intent Detection and Slot  Filling [[pdf]](https://www.aclweb.org/anthology/P19-1544.pdf) | https://github.com/ZephyrChenzf/SF-ID-Network-For-NLU        | ACL                            |
-| CAPSULE-NLU(Zhang  et al, 2019)                              | 97.3       | 91.8    | Joint  Slot Filling and Intent Detection via Capsule Neural Networks [[pdf]](https://arxiv.org/pdf/1812.09471.pdf) | https://github.com/czhang99/Capsule-NLU                      | ACL                            |
-| StackPropagation(Qin  et al, 2019)                           | 98         | 94.2    | A  Stack-Propagation Framework with Token-Level Intent Detection for Spoken  Language Understanding     [[pdf]](https://arxiv.org/pdf/1909.02188.pdf) | [https://github.com/LeePleased/StackPropagation-SLU. ](https://github.com/LeePleased/StackPropagation-SLU.) | EMNLP                          |
-| CM-Net(Liu  et al., 2019)                               | 99.29      | 97.15   | CM-Net: A Novel Collaborative Memory Network for Spoken Language Understanding[[pdf]](https://www.aclweb.org/anthology/D19-1097.pdf)| https://github.com/Adaxry/CM-Net    | EMNLP                                        |
-| Joint  Multiple(Gangadharaiah et al, 2019)                   | 97.23      | 88.03   | Joint  Multiple Intent Detection and Slot Labeling for Goal-Oriented Dialog [[pdf]](https://www.aclweb.org/anthology/N19-1055.pdf) | -                                                            | NAACL                          |
-| Utterance  Generation With Variational Auto-Encoder(Guo et al., 2019) | -          | 93.18   | Utterance  Generation With Variational Auto-Encoder for Slot Filling in Spoken Language  Understanding        [[pdf]](https://ieeexplore.ieee.org/document/8625384) | -                                                            | IEEE Signal Processing Letters |
-| Slot  Gated Intent Atten.(Goo et al, 2018)                   | 96.8       | 88.3    | Slot-Gated   Modeling for Joint Slot Filling and Intent Prediction [[pdf]](https://www.aclweb.org/anthology/N18-2118.pdf) | https://github.com/MiuLab/SlotGated-SLU                      | NAACL                          |
-| Slot  Gated Fulled Atten.(Goo et al, 2018)                   | 97         | 88.8    | Slot-Gated  Modeling for Joint Slot Filling and Intent Prediction [[pdf]](https://www.aclweb.org/anthology/N18-2118.pdf) | https://github.com/MiuLab/SlotGated-SLU                      | NAACL                          |
-| Joint  Variational Generation + Slot Gated Intent Atten(Yoo et al., 2018) | 96.7       | 88.3    | Data  Augmentation for Spoken Language Understanding via Joint Variational  Generation [[pdf]](https://arxiv.org/pdf/1809.02305.pdf) | -                                                            | AAAI                           |
-| Joint  Variational Generation + Slot Gated Full Atten(Yoo et al., 2018) | 97.3       | 89.3    | Data Augmentation  for Spoken Language Understanding via Joint Variational Generation [[pdf]](https://arxiv.org/pdf/1809.02305.pdf) | -                                                            | AAAI                           |
+<div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
+<table style="width:100%" border="2">
+<thead>
+  <tr>
+    <th> Model</th>
+    <th>Intent Acc</th>
+    <th>Slot F1</th>
+    <th>Paper / Source</th>
+    <th>Code link</th>
+    <th>Conference</th>
+  </tr>
+</thead>
+<tbody >
+<tr>
+	<td><code> Co-Interactive(Qin et al., 2021)                         </td></code>
+		<td> 98.8       </td>
+		<td> 95.9    </td>
+		<td> A Co-Interactive Transformer for Joint Slot Filling and Intent Detection  [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) </td>
+		<td> https://github.com/kangbrilliant/DCA-Net      </td>
+		<td> ICASSP  </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Graph LSTM(Zhang et al., 2021)                         </td></code>
+		<td> 98.29      </td>
+		<td> 95.30    </td>
+		<td> Graph LSTM with Context-Gated Mechanism for Spoken Language Understanding  [[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/6499/6355) </td>
+		<td> -      </td>
+		<td> AAAI  </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> SF-ID  Network(E et al, 2019)                                </td></code>
+		<td> 97.43      </td>
+		<td> 91.43   </td>
+		<td> A  Novel Bi-directional Interrelated Model for Joint Intent Detection and Slot  Filling [[pdf]](https://www.aclweb.org/anthology/P19-1544.pdf) </td>
+		<td> https://github.com/ZephyrChenzf/SF-ID-Network-For-NLU        </td>
+		<td> ACL                            </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> CAPSULE-NLU(Zhang  et al, 2019)                              </td></code>
+		<td> 97.3       </td>
+		<td> 91.8    </td>
+		<td> Joint  Slot Filling and Intent Detection via Capsule Neural Networks [[pdf]](https://arxiv.org/pdf/1812.09471.pdf) </td>
+		<td> https://github.com/czhang99/Capsule-NLU                      </td>
+		<td> ACL                            </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> StackPropagation(Qin  et al, 2019)                           </td></code>
+		<td> 98         </td>
+		<td> 94.2    </td>
+		<td> A  Stack-Propagation Framework with Token-Level Intent Detection for Spoken  Language Understanding     [[pdf]](https://arxiv.org/pdf/1909.02188.pdf) </td>
+		<td> [https://github.com/LeePleased/StackPropagation-SLU. ](https://github.com/LeePleased/StackPropagation-SLU.) </td>
+		<td> EMNLP                          </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> CM-Net(Liu  et al., 2019)                               </td></code>
+		<td> 99.29      </td>
+		<td> 97.15   </td>
+		<td> CM-Net: A Novel Collaborative Memory Network for Spoken Language Understanding[[pdf]](https://www.aclweb.org/anthology/D19-1097.pdf)</td>
+		<td> https://github.com/Adaxry/CM-Net    </td>
+		<td> EMNLP                                        </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  Multiple(Gangadharaiah et al, 2019)                   </td></code>
+		<td> 97.23      </td>
+		<td> 88.03   </td>
+		<td> Joint  Multiple Intent Detection and Slot Labeling for Goal-Oriented Dialog [[pdf]](https://www.aclweb.org/anthology/N19-1055.pdf) </td>
+		<td> -                                                            </td>
+		<td> NAACL                          </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Utterance  Generation With Variational Auto-Encoder(Guo et al., 2019) </td></code>
+		<td> -          </td>
+		<td> 93.18   </td>
+		<td> Utterance  Generation With Variational Auto-Encoder for Slot Filling in Spoken Language  Understanding        [[pdf]](https://ieeexplore.ieee.org/document/8625384) </td>
+		<td> -                                                            </td>
+		<td> IEEE Signal Processing Letters </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Slot  Gated Intent Atten.(Goo et al, 2018)                   </td></code>
+		<td> 96.8       </td>
+		<td> 88.3    </td>
+		<td> Slot-Gated   Modeling for Joint Slot Filling and Intent Prediction [[pdf]](https://www.aclweb.org/anthology/N18-2118.pdf) </td>
+		<td> https://github.com/MiuLab/SlotGated-SLU                      </td>
+		<td> NAACL                          </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Slot  Gated Fulled Atten.(Goo et al, 2018)                   </td></code>
+		<td> 97         </td>
+		<td> 88.8    </td>
+		<td> Slot-Gated  Modeling for Joint Slot Filling and Intent Prediction [[pdf]](https://www.aclweb.org/anthology/N18-2118.pdf) </td>
+		<td> https://github.com/MiuLab/SlotGated-SLU                      </td>
+		<td> NAACL                          </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  Variational Generation + Slot Gated Intent Atten(Yoo et al., 2018) </td></code>
+		<td> 96.7       </td>
+		<td> 88.3    </td>
+		<td> Data  Augmentation for Spoken Language Understanding via Joint Variational  Generation [[pdf]](https://arxiv.org/pdf/1809.02305.pdf) </td>
+		<td> -                                                            </td>
+		<td> AAAI                           </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  Variational Generation + Slot Gated Full Atten(Yoo et al., 2018) </td></code>
+		<td> 97.3       </td>
+		<td> 89.3    </td>
+		<td> Data Augmentation  for Spoken Language Understanding via Joint Variational Generation [[pdf]](https://arxiv.org/pdf/1809.02305.pdf) </td>
+		<td> -                                                            </td>
+		<td> AAAI                           </td>
+		<td></td>
+</tr>
+</tbody >
 
 
 
 #### + Pretrained model
+<div style="overflow-x: auto; overflow-y: auto; height: auto; width:100%;">
+<table style="width:100%" border="2">
+<thead>
+  <tr>
+    <th> Model</th>
+    <th>Intent Acc</th>
+    <th>Slot F1</th>
+    <th>Paper / Source</th>
+    <th>Code link</th>
+    <th>Conference</th>
+  </tr>
+</thead>
+<tbody >
+<tr>
+	<td><code> Co-Interactive(Qin et al., 2021)                         </td></code>
+		<td> 98.8       </td>
+		<td> 97.1    </td>
+		<td> A Co-Interactive Transformer for Joint Slot Filling and Intent Detection  [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) </td>
+		<td> https://github.com/kangbrilliant/DCA-Net      </td>
+		<td> ICASSP  </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> StackPropagation  + Bert(Qin et al, 2019)       </td></code>
+		<td> 99         </td>
+		<td> 97      </td>
+		<td> A   Stack-Propagation Framework with Token-Level Intent Detection for Spoken   Language Understanding [[pdf]](https://arxiv.org/pdf/1909.02188.pdf) </td>
+		<td> [https://github.com/LeePleased/StackPropagation-SLU. ](https://github.com/LeePleased/StackPropagation-SLU.) </td>
+		<td> EMNLP      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Bert-Joint(Castellucci  et al, 2019)            </td></code>
+		<td> 99         </td>
+		<td> 96.2    </td>
+		<td> Multi-lingual  Intent Detection and Slot Filling in a Joint BERT-based Mode [[pdf]](https://arxiv.org/pdf/1907.02884.pdf) </td>
+		<td> -                                                            </td>
+		<td> arXiv      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Bert-SLU(Zhang  et al, 2019)                    </td></code>
+		<td> 98.96      </td>
+		<td> 98.78   </td>
+		<td> A Joint Learning  Framework With BERT for Spoken Language Understanding [[pdf]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8907842) </td>
+		<td> -                                                            </td>
+		<td> IEEE       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  BERT(Chen et al, 2019)                   </td></code>
+		<td> 98.6       </td>
+		<td> 97      </td>
+		<td> BERT for Joint   Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) </td>
+		<td> https://github.com/monologg/JointBERT                        </td>
+		<td> arXiv      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> Joint  BERT + CRF(Chen et al, 2019)             </td></code>
+		<td> 98.4       </td>
+		<td> 96.7    </td>
+		<td> BERT  for Joint Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) </td>
+		<td> https://github.com/monologg/JointBERT                        </td>
+		<td> arXiv      </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> ELMo-Light(Siddhant  et al, 2019)               </td></code>
+		<td> 98.38      </td>
+		<td> 93.29   </td>
+		<td> Unsupervised   Transfer Learning for Spoken Language Understanding in Intelligent Agents         [[pdf]](https://arxiv.org/pdf/1811.05370.pdf) </td>
+		<td> -                                                            </td>
+		<td> AAAI       </td>
+		<td></td>
+</tr>
+<tr>
+	<td><code> ELMo(Peters  et al, 2018;Siddhant et al, 2019 ) </td></code>
+		<td> 99.29      </td>
+		<td> 93.9    </td>
+		<td> Deep   contextualized word representations      [[pdf]](https://arxiv.org/pdf/1802.05365.pdf)Unsupervised Transfer Learning for Spoken Language Understanding in   Intelligent Agents [[pdf]](https://arxiv.org/pdf/1811.05370.pdf) </td>
+		<td> -                                                            </td>
+		<td> NAACL/AAAI </td>
+		<td></td>
+</tr>
 
-| Model                                           | Intent Acc | Slot F1 | Paper/Source                                                 | Code link                                                    | Conference |
-| ----------------------------------------------- | ---------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- |
-| Co-Interactive(Qin et al., 2021)                         | 98.8       | 97.1    | A Co-Interactive Transformer for Joint Slot Filling and Intent Detection  [[pdf]](https://arxiv.org/pdf/2010.03880.pdf) | https://github.com/kangbrilliant/DCA-Net      | ICASSP  |
-| StackPropagation  + Bert(Qin et al, 2019)       | 99         | 97      | A   Stack-Propagation Framework with Token-Level Intent Detection for Spoken   Language Understanding [[pdf]](https://arxiv.org/pdf/1909.02188.pdf) | [https://github.com/LeePleased/StackPropagation-SLU. ](https://github.com/LeePleased/StackPropagation-SLU.) | EMNLP      |
-| Bert-Joint(Castellucci  et al, 2019)            | 99         | 96.2    | Multi-lingual  Intent Detection and Slot Filling in a Joint BERT-based Mode [[pdf]](https://arxiv.org/pdf/1907.02884.pdf) | -                                                            | arXiv      |
-| Bert-SLU(Zhang  et al, 2019)                    | 98.96      | 98.78   | A Joint Learning  Framework With BERT for Spoken Language Understanding [[pdf]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8907842) | -                                                            | IEEE       |
-| Joint  BERT(Chen et al, 2019)                   | 98.6       | 97      | BERT for Joint   Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) | https://github.com/monologg/JointBERT                        | arXiv      |
-| Joint  BERT + CRF(Chen et al, 2019)             | 98.4       | 96.7    | BERT  for Joint Intent Classification and Slot Filling [[pdf]](https://arxiv.org/pdf/1902.10909.pdf) | https://github.com/monologg/JointBERT                        | arXiv      |
-| ELMo-Light(Siddhant  et al, 2019)               | 98.38      | 93.29   | Unsupervised   Transfer Learning for Spoken Language Understanding in Intelligent Agents         [[pdf]](https://arxiv.org/pdf/1811.05370.pdf) | -                                                            | AAAI       |
-| ELMo(Peters  et al, 2018;Siddhant et al, 2019 ) | 99.29      | 93.9    | Deep   contextualized word representations      [[pdf]](https://arxiv.org/pdf/1802.05365.pdf)Unsupervised Transfer Learning for Spoken Language Understanding in   Intelligent Agents [[pdf]](https://arxiv.org/pdf/1811.05370.pdf) | -                                                            | NAACL/AAAI |
+
 
