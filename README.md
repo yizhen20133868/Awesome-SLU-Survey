@@ -141,9 +141,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> S                       </td>
 		<td> Airline Travel Information     However, this data set has been shown to have a serious skew problem on intent </td>
 		<td> Train: 4478 Test: 893 120 slot and 21 intent                 </td>
-		<td> Intent Slots                                                 </td>
-		<td></td>
-</tr>
+		<td> Intent Slots                                                 </td></tr>
 <tr>
 	<td><code> SNIPS                              </td></code>
 		<td> 1. Collected by Snips for model evaluation. 2. For natural   language understanding 3. Homepage:   https://medium.com/snips-ai/benchmarking-natural-language-understanding-systems-google-facebook-microsoft-and-snips-2b8ddcf9fb19 </td>
@@ -151,9 +149,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> S                       </td>
 		<td> 7 task: Weather,play music, search, add to list, book, moive </td>
 		<td> Train:13,084 Test:700 7 intent 72 slot labels                </td>
-		<td> Intent Slots                                                 </td>
-		<td></td>
-</tr>
+		<td> Intent Slots                                                 </td></tr>
 <tr>
 	<td><code> Facebook Multilingual SLU  Dataset </td></code>
 		<td> 1 Contains English, Spanish, and Thai across the weather,  reminder, and alarm domains      2 For cross-lingual SLU </td>
@@ -161,9 +157,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> S                       </td>
 		<td> Utterances are manually translated and annotated             </td>
 		<td> Train: English 30,521; Spanish 3,617; Thai 2,156     Dev: English 4,181; Spanish 1,983; Thai 1,235     Test: English 8,621; Spanish 3,043; Thai 1,692     11 slot and 12 intent </td>
-		<td> Intent Slots                                                 </td>
-		<td></td>
-</tr>
+		<td> Intent Slots                                                 </td></tr>
 <tr>
 	<td><code> MIT Restraunt Corpus               </td></code>
 		<td> MIT corpus contains train set and test set in BIO format for  NLU </td>
@@ -172,7 +166,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> It is a single-domain dataset, which is associated with  restaurant reservations. MR contains ‘open-vocabulary’ slots, such as  restaurant names </td>
 		<td> Train:7760      Test:1521                                    </td>
 		<td> Slots                                                        </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> MIT Movie Corpus                   </td></code>
@@ -182,7 +176,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> The MIT movie corpus consists of two single-domain datasets:  the movie eng (ME) and movie trivia (MT) datasets. While both datasets  contain queries about film information, the trivia queries are more complex  and specific </td>
 		<td> eng Corpus:     Train:9775     Test:2443     Trivia Corpus:     Train:7816     Test:1953 </td>
 		<td> Slots                                                        </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> Multilingual ATIS                  </td></code>
@@ -192,7 +186,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> 3 languages                                                  </td>
 		<td> On the top of ATIS dataset, 893 and 715 utterances from the  ATIS test split were translated     and annotated for Hindi and Turkish evaluation respectively     also translated and annotated 600(each language     separately) utterances from the ATIS train split to use as  supervision     In total 37,084 training examples  and 7,859 test examples </td>
 		<td> Intent Slots                                                 </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> Multilingual ATIS++                </td></code>
@@ -202,7 +196,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> 10 languages                                                 </td>
 		<td> check the paper to find the full table of description     (to many info ,have no enough space here) </td>
 		<td> Intent Slots                                                 </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> Almawave-SLU                       </td></code>
@@ -212,7 +206,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> 6 domains: Music, Restaurants, TV, Movies,     Books, Weather </td>
 		<td> Train: 7,142     Validation: 700     Test: 700     7 intents and 39 slots </td>
 		<td> Intent Slots                                                 </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> Chatbot Corpus                     </td></code>
@@ -222,7 +216,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> 2 Intents: Departure Time, Find Connection     5 entity types: StationStart, StationDest, Criterion, Vehicle, Line </td>
 		<td> Train: 100     Test: 106                                     </td>
 		<td> Intent Entity                                                </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> StackExchange Corpus               </td></code>
@@ -232,7 +226,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> Ask ubuntu Intents: “Make Update”, “Setup Printer”, “Shutdown  Computer”, and “Software Recommendation”     Web Applications Intents: “Change  Password”, “Delete Account”, “Download Video”, “Export Data”, “Filter Spam”,  “Find Alternative”, and “Sync Accounts” </td>
 		<td> Total: 290     Ask ubuntu: 190     Web Application: 100      </td>
 		<td> Intent Entity                                                </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> MixSNIPS/MixATIS                   </td></code>
@@ -242,7 +236,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> using conjunctions, connecting sentences with different  intents forming a ratio of 0.3,0.5 and 0.2 for sentences has which 1,2 and 3  intents, respectively </td>
 		<td> Train:12,759 utterances     Dev:4,812 utterances     Test:7,848 utterances </td>
 		<td> Intent(Multi),Slots                                          </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> TOP semantic parsing               </td></code>
@@ -252,7 +246,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> focused on navigation, events, and navigation to events     evaluation script can be run from evaluate.py within the dataset </td>
 		<td> 44783 annotations     Train:31279     Dev:4462     Test:9042 </td>
 		<td> Inten ,Slots in Tree  format                                 </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> MTOP: Multilingual TOP             </td></code>
@@ -262,7 +256,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> 6 languages (both high  and low resource): English, Spanish, French, German, Hindi and Thai.       a mix of both simple as well as  compositional nested queries across 11 domains, 117 intents and 78 slots. </td>
 		<td> 100k examples in total for 6 languages.     Roughly divided into 70:10:20 percent splits for train,eval and test. </td>
 		<td> Two kinds of  representations:     1.flat representatiom: Intent and slots     2.compositional decoupled representations:nested intents inside slots     More details 3.2 section in the paper </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> CAIS                               </td></code>
@@ -272,7 +266,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> 1.The utterances were collected from the Chinese Artificial Intelligence Speakers 2.Adopt the BIOES tagging scheme for slots instead of the BIO2 used in the ATIS 3.intent labels are partial to the PlayMusic option </td>
 		<td> Train: 7,995 utterances Dev: 994 utterances Test: 1024 utterances </td>
 		<td> slots tags and intent labels                                 </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> Simulated Dialogues dataset        </td></code>
@@ -282,7 +276,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> Slots: Sim-R (Restaurant)        price_range, location, restaurant_name, category, num_people, date, time Sim-M (Movie)        theatre_name, movie, date, time, num_people Sim-GEN (Movie):theatre_name, movie, date, time, num_people </td>
 		<td> Train: Sim-R:1116 Sim-M:384 Sim-GEN:100k Dev: Sim-R:349 Sim-M:120 Sim-GEN:10k Test: Sim-R:775 Sim-M:264 Sim-GEN:10k </td>
 		<td> Dialogue state User's act,slot,intent System's act,slot      </td>
-		<td></td>
+		
 </tr>
 <tr>
 	<td><code> Schema-Guided Dialogue Dataset(SGD) </td></code>
@@ -292,8 +286,61 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> domains:16,dialogues:16142,turns:329964,acg turns per dialogue:20.44,total unique tokens:30352,slots:214,slot values:14319</td>
 		<td> NA </td>
 		<td>   Scheme Representation: service_name;description;slot's name,description,is_categorial,possible_values;intent's name,description,is_transactional,required_slots,optional_slots,result_slots. Dialogue Representation: dialogue_id,services,turns,speaker,utterance,frame,service,slot's name,start,exclusive_end;action's act,slot,values,canonical_values;service_call's method,parameters;service_results,state's active_intent,requested_slots,slot_values </td>
-		<td></td>
+		
 </tr>
+<tr>
+    <td><code> CLINC150 </td></code>
+		<td> A intent classification (text classification) dataset with 150 in-domain intent classes. The main purpose of this dataset is to evaluate various classifiers on out-of-domain performance. </td>
+		<td> Download: https://archive.ics.uci.edu/ml/datasets/CLINC150 Paper: https://www.aclweb.org/anthology/D19-1131/ </td>
+		<td> S </td>
+		<td> data_full.json: 150 in-domain intent classes 100 train, 20 val, and 30 test samples while out-of-domain 100 train, 100 val, and 1,000 test samples, data_small.json: in-domain 50 train, 20 val, and 30 test, out-domain 100 train, 100 val, and 1,000 test samples.  data_imbalanced.json: in-domain intent classes 25, 50, 75, or 100 train, 20 val, and 30 samples while out-of-domain class has 100 train, 100 val, and 1,000 test samples.  data_oos_plus.json:  same as data_full.json except there are 250 out-of-domain training samples.</td>
+		<td> size 23700 intent 150 </td>
+		<td> Intent(in-domain, out-domain) </td>
+</tr>
+<tr>
+    <td><code> HWU64 </td></code>
+		<td>  </td>
+		<td> Download: https://github.com/xliuhw/NLU-Evaluation-Data Paper: https://arxiv.org/pdf/1903.05566.pdf  </td>
+		<td> S </td>
+		<td> 21 domains,inter alia,music, news,calendar  </td>
+		<td> size 25716, intents 64, slots 54</td>
+		<td> Intent detection;Entity extraction </td>
+</tr>
+<tr>
+    <td><code> Banking-77 </td></code>
+		<td> BANKING77 dataset provides a very fine-grained set of intents in a banking domain. It comprises 13,083 customer service queries labeled with 77 intents. It focuses on fine-grained single-domain intent detection. </td>
+		<td> Download: github.com/PolyAI-LDN/polyai-models Paper: https://arxiv.org/pdf/2003.04807.pdf </td>
+		<td> S </td>
+		<td> banking </td>
+		<td> size 13083 intents 77 </td>
+		<td> Intent detection </td>
+</tr>
+<tr>
+    <td><code> Restaurants-8K </td></code>
+		<td>  A new challenging data set of 8,198 utterances, compiled from actual conversations in the restaurant booking domain.</td>
+		<td> Download: https://github.com/PolyAI-LDN/task-specific-datasets Paper: https://arxiv.org/pdf/2005.08866.pdf </td>
+		<td> S </td>
+		<td> restaurant booking </td>
+		<td> size 11929 slots 5 </td>
+		<td> Slot filling </td>
+</tr>
+<tr>
+    <td><code> ATIS in Chinese and Indonesian </td></code>
+		<td> ATIS semantic dataset annotated in two new languages </td>
+		<td> Download: http://statnlp.org/research/sp/ Paper: https://www.aclweb.org/anthology/P17-2007.pdf </td>
+		<td> S </td>
+		<td> airline travels </td>
+		<td> size 5371 slot 120(166;lambda-calculus) </td>
+		<td> Semantic parsing; Slot filling </td>
+</tr>
+<tr>
+    <td><code> Vietnamese ATIS </td></code>
+		<td>  </td>
+		<td> Download : https://github.com/VinAIResearch/JointIDSF Paper : https://arxiv.org/pdf/2104.02021.pdf </td>
+		<td> S </td>
+		<td> airline travels </td>
+		<td> size 5871 intent 25 slot 120 </td>
+		<td> Intent detection, Slot filling. </td></tr>
 </tbody >
 </table>
 </div>
