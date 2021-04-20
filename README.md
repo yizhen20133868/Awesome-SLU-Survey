@@ -295,6 +295,8 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td></td>
 </tr>
 </tbody >
+</table>
+</div>
 
 
 ## Frontiers
@@ -866,6 +868,8 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td></td>
 </tr>
 </tbody>
+</table>
+</div>
 
 
 #### + Pretrained model
@@ -946,6 +950,8 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td></td>
 </tr>
 </tbody >
+</table>
+</div>
 
 
 ### SNIPS
@@ -1073,6 +1079,8 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td></td>
 </tr>
 </tbody >
+</table>
+</div>
 
 
 
@@ -1163,5 +1171,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td></td>
 </tr>
 </tbody>
+</table>
+</div>
 
 
