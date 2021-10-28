@@ -341,6 +341,14 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> airline travels </td>
 		<td> size 5871 intent 25 slot 120 </td>
 		<td> Intent detection, Slot filling. </td></tr>
+<tr>
+    <td><code> xSID </td></code>
+		<td> Translation of part of facebook and snips dataset</td>
+		<td> Download : https://bitbucket.org/robvanderg/xsid Paper : https://aclanthology.org/2021.naacl-main.197.pdf </td>
+		<td> S </td>
+		<td> Languages: Arabic, Danish, South-Tyrolean, German, English, Indonesian, Italian, Japanese, Kazakh, Dutch, Serbian, Turkish, Chinese. Intents: AddToPlaylist, BookRestaurant, PlayMusic, RateBook, SearchCreativeWork, SearchScreeningEvent, alarm/cancel_alarm, alarm/modify_alarm, alarm/set_alarm, alarm/show_alarms, alarm/snooze_alarm, reminder/cancel_reminder, reminder/set_reminder, reminder/show_reminders, weather/find.</td>
+		<td> 500 test, 300 dev for each language. 43605 English train (automatic translation into all languages also provided)</td>
+		<td> Intent detection, Slot filling. </td></tr>
 </tbody >
 </table>
 </div>
