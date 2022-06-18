@@ -22,7 +22,9 @@ If you find this repository helpful for your work,  please kindly cite the follo
 
 ## Contributor
 
-Contributed by [Libo Qin](http://ir.hit.edu.cn/~lbqin/), [Tianbao Xie](https://github.com/Timothyxxx), [Yudi Zhang](https://github.com/zyd-project),  [Lehan Wang](https://github.com/luxuriant0116), [Wanxiang Che](http://ir.hit.edu.cn/~car/),[Zhou Yu](http://www.cs.columbia.edu/~zhouyu/).
+Tutorial Presented by [Libo Qin](http://ir.hit.edu.cn/~lbqin/), [Wanxiang Che](http://ir.hit.edu.cn/~car/),[Zhou Yu](http://www.cs.columbia.edu/~zhouyu/).
+
+Resource Contributed by [Libo Qin](http://ir.hit.edu.cn/~lbqin/), [Tianbao Xie](https://github.com/Timothyxxx), [Yudi Zhang](https://github.com/zyd-project),  [Lehan Wang](https://github.com/luxuriant0116), [Wanxiang Che](http://ir.hit.edu.cn/~car/),[Zhou Yu](http://www.cs.columbia.edu/~zhouyu/).
 
 ## Introduction
 
