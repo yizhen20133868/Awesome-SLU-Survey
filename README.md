@@ -22,10 +22,7 @@ If you find this repository helpful for your work,  please kindly cite the follo
 
 ## Contributor
 
-Contributed by [Libo Qin](http://ir.hit.edu.cn/~lbqin/), [Tianbao Xie](https://github.com/Timothyxxx), [Yudi Zhang](https://github.com/zyd-project),  [Lehan Wang](https://github.com/luxuriant0116), [Wanxiang Che](http://ir.hit.edu.cn/~car/).
-
-
-Thanks for supports from our adviser [Wanxiang Che](http://ir.hit.edu.cn/~car/)!
+Contributed by [Libo Qin](http://ir.hit.edu.cn/~lbqin/), [Tianbao Xie](https://github.com/Timothyxxx), [Yudi Zhang](https://github.com/zyd-project),  [Lehan Wang](https://github.com/luxuriant0116), [Wanxiang Che](http://ir.hit.edu.cn/~car/),[Zhou Yu](http://www.cs.columbia.edu/~zhouyu/),
 
 ## Introduction
 
@@ -170,7 +167,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> It is a single-domain dataset, which is associated with  restaurant reservations. MR contains ‘open-vocabulary’ slots, such as  restaurant names </td>
 		<td> Train:7760      Test:1521                                    </td>
 		<td> Slots                                                        </td>
-		
+
 </tr>
 <tr>
 	<td><code> MIT Movie Corpus                   </td></code>
