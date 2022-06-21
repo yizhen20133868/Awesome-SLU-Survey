@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/Status-building-brightgreen) ![](https://img.shields.io/badge/PRs-Welcome-red) 
 
 # 🔥 Tutorial
-### We will present a SLU tutorial (Spoken Language Understanding: Recent Advances and New Frontiers) at IJCAI2022. The Lecture for tutorial is availabel at [https://slututorial.github.io/](https://slututorial.github.io/).
+### We will present a SLU tutorial (Spoken Language Understanding: Recent Advances and New Frontiers) at IJCAI2022. The Lecture for tutorial is available at [https://slututorial.github.io/](https://slututorial.github.io/).
 
 # Resource
 This repository contains a list of papers, codes, datasets, leaderboards in SLU field. If you found any error, please don't hesitate to open an issue or pull request.
