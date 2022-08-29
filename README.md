@@ -120,6 +120,8 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 11. **Neural Architectures for  Multilingual Semantic Parsing** (GEO/ATIS) `ACL 2017` [[pdf]](https://www.aclweb.org/anthology/P17-2007.pdf) [[code]](http://statnlp.org/research/sp/) 
 12. **Few-shot Learning for Multi-label Intent Detection** (TourSG/StandfordLU) `AAAI 2021` [[pdf]](https://arxiv.org/abs/2010.05256.pdf) [[code]](https://github.com/AtmaHou/FewShotMultiLabel) 
 13. **Few-shot Slot Tagging with Collapsed Dependency Transfer and Label-enhanced Task-adaptive Projection Network** (SNIPS and further construct) `ACL 2020` [[pdf]](https://www.aclweb.org/anthology/2020.acl-main.128.pdf) [[code]](https://github.com/AtmaHou/FewShotTagging)
+14. **Text Is No More Enough! A Benchmark for Profile-Based Spoken Language Understanding** (Profile SLU) `AAAI 2022` [[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/21411) [[code]](https://github.com/LooperXX/ProSLU)
+
 
 
 ## Dataset
@@ -449,6 +451,9 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 15. **Contextual spoken language understanding using recurrent neural networks** (single-turn: ATIS multi-turn: Microsoft Cortana) ` 2015` [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/0005271.pdf) 
 16. **Contextual domain classification in spoken language understanding systems using recurrent neural network** (collected by the author) `IEEE 2014` [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2014/05/rnn_dom.pdf) 
 17. **Easy contextual intent prediction and slot detection** (collected by the author) `IEEE 2013` [[pdf]](https://ieeexplore.ieee.org/document/6639291) 
+18. **Adaptive Global-Local Context Fusion for Multi-Turn Spoken Language Understanding** (Simulated Dialogue datas) `AAAI 2021` [[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/21536) 
+19. **Exploring Transfer Learning For End-to-End Spoken Language Understanding** (TOD datas) `AAAI 2021` [[pdf]](fhttps://ojs.aaai.org/index.php/AAAI/article/view/17621) 
+
 
 ### Multi-intent SLU
 
