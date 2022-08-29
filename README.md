@@ -461,6 +461,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 20. **Integration of Pre-Trained Networks with Continuous Token Interface for End-to-End Spoken Language Understanding.** `ICASSP 2022` [[pdf]](https://doi.org/10.1109/ICASSP43922.2022.9747047) 
 21. **Tie Your Embeddings Down: Cross-Modal Latent Spaces for End-to-end Spoken Language Understanding.** `ICASSP 2022` [[pdf]](https://ieeexplore.ieee.org/document/9747759) 
 22. **Towards End-to-End Integration of Dialog History for Improved Spoken Language Understanding** `ICASSP 2022` [[pdf]](https://ieeexplore.ieee.org/document/9747871/) 
+**TA Result Based Portable Framework for Spoken Language Understanding** `ICME 2021` [[pdf]](https://ieeexplore.ieee.org/document/9428384) 
 
 
 ### Multi-intent SLU
@@ -469,7 +470,8 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 2. **Joint Multiple Intent Detection and Slot Labeling for Goal-Oriented Dialog** (ATIS/SNIPS/internal dataset) `NACCL 2019` [[pdf]](https://www.aclweb.org/anthology/N19-1055.pdf)
 3. **Two-stage multi-intent detection for spoken language understanding** (Korean-language corpus for the TV guide domain colleted by author) `Multimed Tools Appl 2017` [[pdf]](https://link.springer.com/article/10.1007/s11042-016-3724-4)
 4. **Exploiting Shared Information for Multi-intent Natural Language Sentence Classification** (inhouse corpus from Microsoft) `Interspeech 2013` [[pdf]](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/08/double_intent.pdf)
-5. **A Label-Aware BERT Attention Network for Zero-Shot Multi-Intent Detection in Spoken Language Understanding** (inhouse corpus from Microsoft) `EMNLP 2021` [[pdf]]([https://www.microsoft.com/en-us/research/wp-content/uploads/2013/08/double_intent.pdf](https://aclanthology.org/2021.emnlp-main.399/)) [[code]](https://github.com/waynewu6250/laban)
+5. **A Label-Aware BERT Attention Network for Zero-Shot Multi-Intent Detection in Spoken Language Understanding** `EMNLP 2021` [[pdf]](https://aclanthology.org/2021.emnlp-main.399/) [[code]](https://github.com/waynewu6250/laban)
+6. **GL-GIN: Fast and Accurate Non-Autoregressive Model for Joint Multiple Intent Detection and Slot Filling** (multi-atis/multi-snips) `ACL 2021` [[pdf]](https://aclanthology.org/2021.acl-long.15/) [[code]](https://github.com/yizhen20133868/GL-GIN)
 
 ### Chinese SLU
 
