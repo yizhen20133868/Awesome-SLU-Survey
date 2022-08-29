@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/Status-building-brightgreen) ![](https://img.shields.io/badge/PRs-Welcome-red) 
 
 # 🔥 Tutorial
-### We will present a SLU tutorial (Spoken Language Understanding: Recent Advances and New Frontiers) at IJCAI2022. The Lecture for tutorial is available at [https://slututorial.github.io/](https://slututorial.github.io/).
+### SLU tutorial (Spoken Language Understanding: Recent Advances and New Frontiers) at IJCAI2022. The Lecture for tutorial is available at [https://slututorial.github.io/](https://slututorial.github.io/).
 
 # Resource
 This repository contains a list of papers, codes, datasets, leaderboards in SLU field. If you found any error, please don't hesitate to open an issue or pull request.
@@ -65,6 +65,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
   * [Contextual SLU](#contextual-slu)
   * [Multi-intent SLU](#multi-intent-slu)
   * [Chinese SLU](#chinese-slu)
+  * [Robust SLU](#robust-slu)
   * [Cross-domain SLU](#cross-domain-slu)
   * [Cross-lingual SLU](#cross-lingual-slu)
   * [Low-resource SLU](#low-resource-slu)
@@ -467,6 +468,9 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 1. **Injecting Word Information with Multi-Level Word Adapter for Chinese Spoken Language Understanding** (CAIS/ECDT-NLU) `arXiv 2020` [[pdf]](https://arxiv.org/pdf/2010.03903.pdf) [[code]](https://github.com/AaronTengDeChuan/MLWA-Chinese-SLU) 
 2. **CM-Net: A Novel Collaborative Memory Network for Spoken Language Understanding** (ATIS/SNIPS/CAIS) `EMNLP 2019` [[pdf]](https://www.aclweb.org/anthology/D19-1097.pdf) [[code]](https://github.com/Adaxry/CM-Net) 
 
+### Robust SLU
+1. **Distributionally Robust Finetuning BERT for Covariate Drift in Spoken Language Understanding** (ATIS/SNIPS/TOD-NN/MIT) `ACL 2022` [[pdf]](https://aclanthology.org/2022.acl-long.139.pdf) 
+
 ### Cross-domain SLU
 
 1. **Coach: A Coarse-to-Fine  Approach for Cross-domain Slot Filling** (SNIPS) `ACL 2020` [[pdf]](https://arxiv.org/pdf/2004.11727.pdf) [[code]](https://github.com/zliucr/coach)
@@ -507,6 +511,7 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 15. **Multi-style adaptive training  for robust cross-lingual spoken language understanding** (English-Chinese ATIS) `IEEE 2013` [[pdf]](https://ieeexplore.ieee.org/abstract/document/6639292) 
 16. **ASGARD: A PORTABLE  ARCHITECTURE FOR MULTILINGUAL DIALOGUE SYSTEMS** (collected from crowd-sourcing platform) `ICASSP 2013` [[pdf]](https://groups.csail.mit.edu/sls/publications/2013/Liu_ICASSP-2013.pdf) 
 17. **Combining multiple translation  systems for Spoken Language Understanding portability** (MEDIA) `IEEE 2012` [[pdf]](https://ieeexplore.ieee.org/document/6424221) 
+18. **GL-CLeF: A Global–Local Contrastive Learning Framework for Cross-lingual Spoken Language Understanding** (GEO/ATIS) `ACL 2022` [[pdf]](https://aclanthology.org/2022.acl-long.191.pdf) [[code]](https://github.com/LightChen233/GL-CLeF) 
 
 ### Low-resource SLU
 
