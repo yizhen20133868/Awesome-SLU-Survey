@@ -49,36 +49,43 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 
 
 ## Quick path
-- [Resources](#resources)
-  * [survey paper links](#survey-paper-links)
-  * [recent open-sourced code](#recent-open-sourced-code)
-  * [Single Model](#single-model)
-  * [Joint Model](#joint-model)
-  * [Complex SLU Model](#complex-slu-model)
-- [Dataset](#dataset)
-- [Frontiers](#frontiers)
-  * [Single Slot Filling](#single-slot-filling)
-  * [Single Intent Detection](#single-intent-detection)
-  * [Joint Model](#joint-model-1)
-    + [Implicit joint modeling](#implicit-joint-modeling)
-    + [Explicit joint modeling](#explicit-joint-modeling)
-  * [Contextual SLU](#contextual-slu)
-  * [Multi-intent SLU](#multi-intent-slu)
-  * [Chinese SLU](#chinese-slu)
-  * [Robust SLU](#robust-slu)
-  * [Cross-domain SLU](#cross-domain-slu)
-  * [Cross-lingual SLU](#cross-lingual-slu)
-  * [Low-resource SLU](#low-resource-slu)
-    + [Few-shot SLU](#few-shot-slu)
-    + [Zero-shot SLU](#zero-shot-slu)
-    + [Unsupervised SLU](#unsupervised-slu)
-- [LeaderBoard](#leaderboard)
-  * [ATIS](#atis)
-    + [Non-pretrained model](#non-pretrained-model)
-    + [+ Pretrained model](#--pretrained-model)
-  * [SNIPS](#snips)
-    + [Non-pretrained model](#non-pretrained-model-1)
-    + [+ Pretrained model](#--pretrained-model-1)
+- [A Survey on Spoken Language Understanding: Recent Advances and New Frontiers](#a-survey-on-spoken-language-understanding-recent-advances-and-new-frontiers)
+- [🔥 Tutorial](#-tutorial)
+		- [SLU tutorial (Spoken Language Understanding: Recent Advances and New Frontiers) at IJCAI2022. The Lecture for tutorial is available at https://slututorial.github.io/.](#slu-tutorial-spoken-language-understanding-recent-advances-and-new-frontiers-at-ijcai2022-the-lecture-for-tutorial-is-available-at-httpsslututorialgithubio)
+- [Resource](#resource)
+	- [Contributor](#contributor)
+	- [Introduction](#introduction)
+	- [Quick path](#quick-path)
+	- [Resources](#resources)
+		- [survey paper links](#survey-paper-links)
+		- [recent open-sourced code](#recent-open-sourced-code)
+		- [Single Model](#single-model)
+		- [Joint Model](#joint-model)
+		- [Complex SLU Model](#complex-slu-model)
+	- [Dataset](#dataset)
+	- [Frontiers](#frontiers)
+		- [Single Slot Filling](#single-slot-filling)
+		- [Single Intent Detection](#single-intent-detection)
+		- [Joint Model](#joint-model-1)
+			- [Implicit joint modeling](#implicit-joint-modeling)
+			- [Explicit joint modeling](#explicit-joint-modeling)
+		- [Contextual SLU](#contextual-slu)
+		- [Multi-intent SLU](#multi-intent-slu)
+		- [Chinese SLU](#chinese-slu)
+		- [Robust SLU](#robust-slu)
+		- [Cross-domain SLU](#cross-domain-slu)
+		- [Cross-lingual SLU](#cross-lingual-slu)
+		- [Low-resource SLU](#low-resource-slu)
+			- [Few-shot SLU](#few-shot-slu)
+			- [Zero-shot SLU](#zero-shot-slu)
+			- [Unsupervised SLU](#unsupervised-slu)
+	- [LeaderBoard](#leaderboard)
+		- [ATIS](#atis)
+			- [Non-pretrained model](#non-pretrained-model)
+			- [+ Pretrained model](#-pretrained-model)
+		- [SNIPS](#snips)
+			- [Non-pretrained model](#non-pretrained-model-1)
+			- [+ Pretrained model](#-pretrained-model-1)
 
 ## Resources
 ### survey paper links
@@ -355,6 +362,16 @@ The taxonomy and frontiers of our survey can be summarized into this picture bel
 		<td> Languages: Arabic, Danish, South-Tyrolean, German, English, Indonesian, Italian, Japanese, Kazakh, Dutch, Serbian, Turkish, Chinese. Intents: AddToPlaylist, BookRestaurant, PlayMusic, RateBook, SearchCreativeWork, SearchScreeningEvent, alarm/cancel_alarm, alarm/modify_alarm, alarm/set_alarm, alarm/show_alarms, alarm/snooze_alarm, reminder/cancel_reminder, reminder/set_reminder, reminder/show_reminders, weather/find.</td>
 		<td> 500 test, 300 dev for each language. 43605 English train (automatic translation into all languages also provided)</td>
 		<td> Intent detection, Slot filling. </td></tr>
+		<tr>
+    <td><code> ProSLU </td></code>
+		<td> Profile-based Spoken Language Understanding (Profile SLU) requires the model that not only relies on the plain text but also the supporting profile information to predict the correct intents and slots.  </td>
+		<td> Download : https://github.com/LooperXX/ProSLU/tree/master/data/ProSLU 
+		Paper : https://ojs.aaai.org/index.php/AAAI/article/view/21411 </td>
+		<td> S </td>
+		<td> A large-scale human-annotated Chinese dataset with over 5K utterances and their corresponding supporting profile information: Knowledge Graph (KG), User Profile (UP), Context Awareness (CA). Experiments on various vanilla SLU baselines, and a general Profile SLU model with the multi-level knowledge adapter are provided. </td> 
+		<td> Train: 4196, Dev: 522, Test: 531; intent 14, slot 99. </td>
+		<td> Intent detection, Slot filling. </td></tr>
+
 </tbody >
 </table>
 </div>
